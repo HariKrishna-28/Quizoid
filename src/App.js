@@ -59,7 +59,12 @@ function App() {
   return (questions.length > 0 ? (
     <div className="container">
       {currentIndex >= questions.length ? (
-        <h1 className="text-3xl font-bold text-white">
+        <h1 className="text-3xl font-bold "
+          style={{
+            color: '#7dced0',
+            textAlign: 'center'
+          }}
+        >
           Game ended! Your score is {score}
         </h1>
 
@@ -72,12 +77,8 @@ function App() {
       )}
     </div>
   ) : (
-    <h3>Loading please wait</h3>
+    <h3 className='font-bold'>Loading Please Wait</h3>
   ))
 }
-
-
-
-
 
 export default App;
