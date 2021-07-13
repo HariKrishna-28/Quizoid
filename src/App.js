@@ -1,84 +1,67 @@
-import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
+import React, { useState } from 'react';
+//import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 //import { Questionnaire } from './components';
-import Questionnaire from './components/Questionnaire';
+import Display from './components/Display';
+//import { Button } from 'bootstrap';
 
 
-const API_URL = 'https://opentdb.com/api.php?amount=10&category=9&type=multiple';
+//const API_URL = 'https://opentdb.com/api.php?amount=10&category=9&type=multiple';
 
 function App() {
-  const [questions, setQuestions] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [score, setScore] = useState(0);
-  const [showAnswers, setShowAnswers] = useState(false);
-
-  useEffect(() => {
-    fetch(API_URL)
-      .then(res => res.json())
-      .then(data => {
-        const questions = data.results.map((question) =>
-        ({
-          ...question,
-          answers: [
-            question.correct_answer,
-            ...question.incorrect_answers
-          ].sort(() => Math.random() - 0.5
-          ),
-        }));
-
-        setQuestions(questions);
-
-      });
-  }, []);
-
-  const handleAnswer = (answer) => {
-    //check for the answer, show the question and change the score
-    // loops through the question set
-    if (!showAnswers) {
-      if (answer === questions[currentIndex].correct_answer) {
-        setScore(score + 1)
-        //increase score
-      }
-    }
-
-    setShowAnswers(true);
-
-    //const newIndex = currentIndex + 1
-    //setCurrentIndex(newIndex)
+  const [state, setState] = useState(undefined);
 
 
-  };
+  const Button = ({ text, id, bg }) => {
+    return (
+      <button
 
-  const handleNextQuestion = () => {
-    setShowAnswers(false);
+        className="text-black"
+        style={{
+          paddingTop: 30,
+          paddingBottom: 30,
+          paddingLeft: 15,
+          paddingRight: 15,
+          fontSize: 20,
+          borderRadius: 20,
+          backgroundColor: '#7dced0',
+          border: 0,
+          textAlign: 'center',
+          fontWeight: '600',
+        }}
+        onClick={() => clickEvent(id)}>
+        {text}
+      </button>
 
-    setCurrentIndex(currentIndex + 1);
+    )
   }
 
-  return (questions.length > 0 ? (
-    <div className="container">
-      {currentIndex >= questions.length ? (
-        <h1 className="text-3xl font-bold "
-          style={{
-            color: '#7dced0',
-            textAlign: 'center'
-          }}
-        >
-          Game ended! Your score is {score}
-        </h1>
+  function clickEvent(id) {
+    setState(id);
+  }
 
-      ) : (
-        <Questionnaire
-          data={questions[currentIndex]}
-          showAnswers={showAnswers}
-          handleAnswer={handleAnswer}
-          handleNextQuestion={handleNextQuestion} />
-      )}
-    </div>
-  ) : (
-    <h3 className='font-bold'>Loading Please Wait</h3>
-  ))
+  return (state === '1' ? <Display api={'https://opentdb.com/api.php?amount=10&category=9&type=multiple'} /> :
+    (state === '2' ? <Display api={'https://opentdb.com/api.php?amount=10&category=17&type=multiple'} /> :
+      state === '3' ? <Display api={'https://opentdb.com/api.php?amount=10&category=18&type=multiple'} /> :
+        state === '4' ? <Display api={'https://opentdb.com/api.php?amount=10&category=19&type=multiple'} /> :
+          state === '5' ? <Display api={'https://opentdb.com/api.php?amount=10&category=22&type=multiple'} /> :
+            state === '6' ? <Display api={'https://opentdb.com/api.php?amount=10&category=23&type=multiple'} /> :
+              (
+                <><header className="font-bold text-3xl"
+                  style={{ textAlign: 'center', paddingBottom: 10, color: '#7dced0', }}>
+                  Choose your category</header>
+                  <div className="grid grid-cols-2 gap-6 mt-6" >
+                    <Button text='General Knowledge' id='1' onClick={clickEvent} />
+                    <Button text='Ecology' id='2' onClick={clickEvent} />
+                    <Button text='Computer Science' id='3' onClick={clickEvent} />
+                    <Button text='Mathematics' id='4' onClick={clickEvent} />
+                    <Button text='Geographical Science' id='5' onClick={clickEvent} />
+                    <Button text='History' id='6' onClick={clickEvent} />
+                  </div>
+                </>
+              )
+
+    ))
 }
-
 export default App;
+//{/*<Display api={'https://opentdb.com/api.php?amount=10&category=9&type=multiple'}  title = {/>*/}
