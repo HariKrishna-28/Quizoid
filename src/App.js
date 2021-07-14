@@ -12,10 +12,9 @@ function App() {
   const [state, setState] = useState(undefined);
 
 
-  const Button = ({ text, id, bg }) => {
+  const Button = ({ id, text, bg }) => {
     return (
       <button
-
         className="text-black"
         style={{
           paddingTop: 30,
@@ -23,8 +22,8 @@ function App() {
           paddingLeft: 15,
           paddingRight: 15,
           fontSize: 20,
-          borderRadius: 20,
-          backgroundColor: '#7dced0',
+          borderRadius: 10,
+          backgroundColor: `${bg}`,
           border: 0,
           textAlign: 'center',
           fontWeight: '600',
@@ -51,16 +50,46 @@ function App() {
                   style={{ textAlign: 'center', paddingBottom: 10, color: '#7dced0', }}>
                   Choose your category</header>
                   <div className="grid grid-cols-2 gap-6 mt-6" >
-                    <Button text='General Knowledge' id='1' onClick={clickEvent} />
-                    <Button text='Ecology' id='2' onClick={clickEvent} />
-                    <Button text='Computer Science' id='3' onClick={clickEvent} />
-                    <Button text='Mathematics' id='4' onClick={clickEvent} />
-                    <Button text='Geographical Science' id='5' onClick={clickEvent} />
-                    <Button text='History' id='6' onClick={clickEvent} />
+
+                    <Button
+                      id='1'
+                      text='General Knowledge'
+                      bg={'#9483bd'}
+                      onClick={clickEvent} />
+
+                    <Button
+                      id='2'
+                      text='Ecology'
+                      bg={'#e79995'}
+                      onClick={clickEvent} />
+
+                    <Button
+                      id='3'
+                      text='Computer Science'
+                      bg={'#98d5ca'}
+                      onClick={clickEvent} />
+
+                    <Button
+                      id='4'
+                      text='Mathematics'
+                      bg={'#9acaed'}
+                      onClick={clickEvent} />
+
+                    <Button
+                      id='5'
+                      bg={'#98d099'}
+                      text='Geographical Science'
+                      onClick={clickEvent} />
+
+                    <Button
+                      id='6'
+                      text='History'
+                      bg={'#e8ce4f'}
+                      onClick={clickEvent} />
+
                   </div>
                 </>
               )
-
     ))
 }
 export default App;
