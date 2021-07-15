@@ -11,7 +11,7 @@ import Display from './components/Display';
 function App() {
   const [state, setState] = useState(undefined);
 
-
+  //buttons for categories
   const Button = ({ id, text, bg }) => {
     return (
       <button
@@ -71,7 +71,7 @@ function App() {
 
                     <Button
                       id='4'
-                      text='Mathematics'
+                      text='Maths'
                       bg={'#9acaed'}
                       onClick={clickEvent} />
 

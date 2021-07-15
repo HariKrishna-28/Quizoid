@@ -1,14 +1,11 @@
 import React from 'react';
 
-
-
 const Questionnaire = ({
     showAnswers,
     handleAnswer,
     handleNextQuestion,
     data: { question, correct_answer, answers }
 }) => {
-
 
     return (
         <div className='flex flex-col '>

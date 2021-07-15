@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Questionnaire from './Questionnaire';
+import RotateLoader from "react-spinners/RotateLoader";
 //import './App.css';
 //import { Questionnaire } from './components';
 //import Questionnaire from './Questionnaire';
@@ -90,7 +91,8 @@ function Display({ api }) {
             )}
         </div>
     ) : (
-        <h3 className='font-bold'>Loading Please Wait</h3>
+        //<h3 className='font-bold'>Loading Please Wait</h3>
+        <RotateLoader />
     ))
 }
 
