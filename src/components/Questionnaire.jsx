@@ -8,7 +8,7 @@ const Questionnaire = ({
 }) => {
 
     return (
-        <div className='flex flex-col '>
+        <div className='flex flex-col'>
             {/* prints the questions*/}
             <div className=" text-black p-10 rounded shadow-md" style={{ backgroundColor: '#7dced0' }}>
                 <h2
@@ -38,7 +38,7 @@ const Questionnaire = ({
             {showAnswers && (
                 <button
                     onClick={handleNextQuestion}
-                    className={`ml-auto mt-6  bg-white text-purple-800 p-4 font-semibold rounded shadow`}
+                    className={`ml-auto mt-6 bg-white text-purple-800 p-4 font-semibold rounded shadow`}
                 >
                     Next Question
                 </button>
