@@ -45,7 +45,7 @@ function App() {
         state === '4' ? <Display api={'https://opentdb.com/api.php?amount=10&category=19&type=multiple'} /> :
           state === '5' ? <Display api={'https://opentdb.com/api.php?amount=10&category=22&type=multiple'} /> :
             state === '6' ? <Display api={'https://opentdb.com/api.php?amount=10&category=23&type=multiple'} /> :
-              state === '7' ? <Display api={'https://opentdb.com/api.php?amount=10&category=30&type=multiple'} /> :
+              state === '7' ? <Display api={'https://opentdb.com/api.php?amount=10&category=21&type=multiple'} /> :
                 state === '8' ? <Display api={'https://opentdb.com/api.php?amount=10&category=20&type=multiple'} /> :
                   (
                     <><header className="font-bold text-3xl pt-3"
@@ -92,17 +92,15 @@ function App() {
 
                         <Button
                           id='7'
-                          text='Gadgets'
+                          text='Sports'
                           bg={'#e7e5e3'}
                           onClick={clickEvent} />
-                        <Button
 
+                        <Button
                           id='8'
                           text='Ancient Mythology'
                           bg={'#e769bb'}
                           onClick={clickEvent} />
-
-
 
                       </div>
                     </>
