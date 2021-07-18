@@ -78,7 +78,6 @@ function Display({ api }) {
                             paddingBottom: 60,
                             marginBottom: 10,
                             textAlign: 'center',
-
                         }}>
                         {title}
                     </header> */}
@@ -86,7 +85,9 @@ function Display({ api }) {
                         data={questions[currentIndex]}
                         showAnswers={showAnswers}
                         handleAnswer={handleAnswer}
-                        handleNextQuestion={handleNextQuestion} />
+                        handleNextQuestion={handleNextQuestion}
+
+                    />
                 </>
             )}
         </div>
