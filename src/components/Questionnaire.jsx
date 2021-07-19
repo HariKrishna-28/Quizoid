@@ -8,11 +8,15 @@ const Questionnaire = ({
 }) => {
 
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col'
+        >
             {/* prints the questions*/}
             <div
                 className=" text-black p-10 rounded shadow-md"
-                style={{ backgroundColor: '#7dced0', }}>
+                style=
+                {{
+                    backgroundColor: '#7dced0',
+                }}>
                 <h2
                     className="text-2xl"
                     dangerouslySetInnerHTML={{ __html: question }}

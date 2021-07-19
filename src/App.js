@@ -28,7 +28,8 @@ function App() {
           textAlign: 'center',
           fontWeight: '600',
         }}
-        onClick={() => clickEvent(id)}>
+        onClick={() => clickEvent(id)}
+      >
         {text}
       </button>
 
@@ -76,7 +77,6 @@ function App() {
 
                                       >
                                         {/* category tiles */}
-
 
                                         <Button
                                           id='1'
@@ -134,7 +134,7 @@ function App() {
 
                                         <Button
                                           id='11'
-                                          text='Music'
+                                          text='Musicals'
                                           bg={'#98d5ca'}
                                           onClick={clickEvent} />
 
@@ -145,9 +145,9 @@ function App() {
                                           onClick={clickEvent} />
 
                                         <Button
-                                          id='15'
-                                          text='Comics'
-                                          bg={'#e7e5e3'}
+                                          id='9'
+                                          text='Books and Novels'
+                                          bg={'#9483bd'}
                                           onClick={clickEvent} />
 
                                         <Button
@@ -158,20 +158,20 @@ function App() {
 
                                         <Button
                                           id='14'
-                                          text='Zoology'
+                                          text='Biological Science'
                                           bg={'#e8ce4f'}
                                           onClick={clickEvent} />
 
                                         <Button
-                                          id='9'
-                                          text='Books and Novels'
-                                          bg={'#9483bd'}
+                                          id='15'
+                                          text='Comics'
+                                          bg={'#e7e5e3'}
                                           onClick={clickEvent} />
 
 
                                         <Button
                                           id='16'
-                                          text='Cartoons'
+                                          text='Cartoons and Anime'
                                           bg={'#e769bb'}
                                           onClick={clickEvent} />
 
