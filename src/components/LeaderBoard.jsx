@@ -18,12 +18,23 @@ const LeaderBoard = () => {
                     userName: data[id].userName,
                     userScore: data[id].userScore,
                     category: data[id].category,
-
                 })
             }
-            setuserData(userInfo);
+
+            let data_ = userInfo.sort(sortData);
+            setuserData(data_.slice(data_.length - 10, data_.length).reverse());
         })
     }, [])
+
+    /**
+     * This acts as a comparision function
+     * @param {Object} el1 
+     * @param {Object} el2 
+     * @returns {Number}
+     */
+    const sortData = (el1, el2) => {
+        return (el1.userScore - el2.userScore);
+    }
 
     const rowStyle = {
         paddingLeft: '3rem',
@@ -35,7 +46,6 @@ const LeaderBoard = () => {
     const headerStyle = {
         textAlign: 'center',
         border: '1px solid black',
-
     }
 
     return (userData.length === 0 ? (<div className='flex justify-center items-center h-screen'><RotateLoader /></div>) :
@@ -63,7 +73,7 @@ const LeaderBoard = () => {
                     </thead>
                     {
                         userData.map((data, index) => {
-                            return <tbody >
+                            return <tbody>
                                 <tr>
                                     <td style={rowStyle}> {parseInt(index) + 1}</td>
                                     <td style={rowStyle}> {data.userName} </td>

@@ -58,6 +58,10 @@ function Display({ name, api }) {
 
     const handleNextQuestion = () => {
         setShowAnswers(false);
+        let curr_index = currentIndex + 1;
+        if(curr_index >= questions.length){
+            uploadScore();
+        }
         setCurrentIndex(currentIndex + 1);
     }
 
@@ -72,17 +76,22 @@ function Display({ name, api }) {
         textAlign: 'center',
     }
 
-    const tableName = "/" + `${name}`;
+    const tableName = `/${name}`;
 
-    const uploadScore = () => {
-        const firestore = firebase.database().ref(tableName);
-        let data = {
-            userName: 'checkUser',
-            category: name,
-            userScore: score,
-        };
-        firestore.push(data);
-        console.log('pushed the data')
+    const uploadScore = async() => {
+        try {
+            console.log('logged in upload Data')
+            const firestore = firebase.database().ref(tableName);
+            let data = {
+                userName: 'checkUser',
+                category: name,
+                userScore: score,
+            };
+            await firestore.push(data);
+            console.log('pushed the data')
+        } catch (error) {
+            console.log(error.message);
+        }
     }
 
     const alignText = {
@@ -119,7 +128,7 @@ function Display({ name, api }) {
                         <button style={buttonStyle} >Back to Categories</button>
                         <Link to='/LeaderBoard' style={buttonStyle}>LeaderBoard</Link>
                     </div>
-                    {uploadScore()}
+                    {/* {uploadScore()} */}
                 </>
             ) : (
                 <>
