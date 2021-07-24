@@ -2,9 +2,11 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import firebase from '../FireBase';
 import RotateLoader from "react-spinners/RotateLoader";
+//import { useParams } from 'react-router-dom';
 
 const LeaderBoard = () => {
     const [userData, setuserData] = useState([]);
+    //const {tableName} = useParams();
 
     useEffect(() => {
         const firestore = firebase.database().ref('/Ecology');
@@ -37,29 +39,36 @@ const LeaderBoard = () => {
     }
 
     const rowStyle = {
-        paddingLeft: '3rem',
+        marginLeft: '5rem',
+        marginRight: '5rem',
         paddingRight: '3rem',
+        paddingLeft: '3rem',
         border: '1px solid black',
         textAlign: 'center',
+        backgroundColor: '#7dced0',
     }
 
     const headerStyle = {
         textAlign: 'center',
         border: '1px solid black',
+        backgroundColor: '#7dced0',
+
     }
+
+
 
     return (userData.length === 0 ? (<div className='flex justify-center items-center h-screen'><RotateLoader /></div>) :
         (
             <div style={{
-                marginLeft: '4rem',
-                marginRight: '2rem'
+                textAlign: 'center',
+
             }}>
 
                 <div className='flex justify-center items-center pt-4 '>
-                    <h1>category name</h1>
+                    <h2>category name</h2>
                 </div>
-                <table className="table-auto text-2xl" style={{
-                    border: '1px solid black',
+                <table className="table-auto text-xl" style={{
+                    border: '0px solid black',
                     marginTop: '2rem',
 
                 }}>
@@ -89,6 +98,7 @@ const LeaderBoard = () => {
         )
 
     )
+
 }
 
 export default LeaderBoard;

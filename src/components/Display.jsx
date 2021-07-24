@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Questionnaire from './Questionnaire';
 import RotateLoader from "react-spinners/RotateLoader";
 import firebase from '../FireBase';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import LeaderBoard from './LeaderBoard';
+import { Link } from 'react-router-dom';
+//import LeaderBoard from './LeaderBoard';
 //import { BrowserRouter, Route } from "react-router-dom";
 //import './App.css';
 //import { Questionnaire } from './components';
@@ -37,7 +37,7 @@ function Display({ name, api }) {
                 setQuestions(questions);
 
             });
-    }, []);
+    }, [api]);
 
     const handleAnswer = (answer) => {
         //check for the answer, show the question and change the score
@@ -59,7 +59,7 @@ function Display({ name, api }) {
     const handleNextQuestion = () => {
         setShowAnswers(false);
         let curr_index = currentIndex + 1;
-        if(curr_index >= questions.length){
+        if (curr_index >= questions.length) {
             uploadScore();
         }
         setCurrentIndex(currentIndex + 1);
@@ -78,17 +78,17 @@ function Display({ name, api }) {
 
     const tableName = `/${name}`;
 
-    const uploadScore = async() => {
+    const uploadScore = async () => {
         try {
-            console.log('logged in upload Data')
+            console.log('logged in upload Data');
             const firestore = firebase.database().ref(tableName);
             let data = {
-                userName: 'checkUser',
+                userName: 'check user',
                 category: name,
                 userScore: score,
             };
             await firestore.push(data);
-            console.log('pushed the data')
+            console.log('pushed the data');
         } catch (error) {
             console.log(error.message);
         }
@@ -126,7 +126,7 @@ function Display({ name, api }) {
                         }}>
                         <button style={buttonStyle} >Home page</button>
                         <button style={buttonStyle} >Back to Categories</button>
-                        <Link to='/LeaderBoard' style={buttonStyle}>LeaderBoard</Link>
+                        <Link to='/ChooseLeaderBoard' style={buttonStyle}>LeaderBoard</Link>
                     </div>
                     {/* {uploadScore()} */}
                 </>

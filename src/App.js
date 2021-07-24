@@ -5,7 +5,9 @@ import React, { useState } from 'react';
 import Display from './components/Display';
 //import { Button } from 'bootstrap';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import LeaderBoard from './components/LeaderBoard';
+//import LeaderBoard from './components/LeaderBoard';
+import ChooseLeaderBoard from './components/ChooseLeaderBoard';
+//import LeaderBoardCategories from './components/LeaderBoardCategories';
 
 //const API_URL = 'https://opentdb.com/api.php?amount=10&category=9&type=multiple';
 
@@ -29,7 +31,7 @@ function App() {
           textAlign: 'center',
           fontWeight: '600',
         }}
-        onClick={() => clickEvent(id)}
+        onClick={() => clickEvent(id, text)}
       >
         {text}
       </button>
@@ -236,7 +238,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path='/LeaderBoard' exact component={LeaderBoard} />
+        <Route path='/ChooseLeaderBoard' exact component={ChooseLeaderBoard} />
         {showCategories()}
       </Switch>
     </BrowserRouter>)
