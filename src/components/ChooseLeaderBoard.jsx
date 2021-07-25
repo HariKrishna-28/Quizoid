@@ -12,37 +12,30 @@ const ChooseLeaderBoard = () => {
             textAlign: 'center',
         }
 
-        function handleChange(event) {
+        async function handleChange(event) {
             // setCategory(index);
-            event.preventDefault();
-            console.log(event.target.value)
-            
+            // event.preventDefault();
+
             // This will set the index of the value passed from the options array
-            setCategory(options.indexOf(event.target.value))
-            console.log(category)
+
+            // Modifying the default state, and apply.
+            let category_state = category
+            category_state = options.indexOf(event.target.value)
+            setCategory(category_state)
+
+            console.log(options.indexOf(event.target.value))
 
             // Another best option is to use them directly and render them with a switch statement.
         }
 
         return (
-            <select style={dropDownStyle} onChange={handleChange}>
+            <select style={dropDownStyle} onChange={handleChange} value={options[category]}>
                 {options.map((op, index) => {
                     return (
-                        <option value={op} key = {index} >{op}</option>
+                        <option value={op} key={index} >{op}</option>
                     )
                 })}
             </select>
-
-            /*<Dropdown
-            placeholder="Select an option"
-            className="my-className"
-            
-            value="one"
-            onChange={(value) => console.log('change!', value)}
-            onSelect={(value) => console.log('selected!', value)} // always fires once a selection happens even if there is no change
-            onClose={(closedBySelection) => console.log('closedBySelection?:', closedBySelection)}
-        onOpen={() => console.log('open!')}
-        />*/
         )
 
     }
