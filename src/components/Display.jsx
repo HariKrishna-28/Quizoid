@@ -4,11 +4,6 @@ import Questionnaire from './Questionnaire';
 import RotateLoader from "react-spinners/RotateLoader";
 import firebase from '../FireBase';
 import { Link } from 'react-router-dom';
-//import LeaderBoard from './LeaderBoard';
-//import { BrowserRouter, Route } from "react-router-dom";
-//import './App.css';
-//import { Questionnaire } from './components';
-//import Questionnaire from './Questionnaire';
 
 
 function Display({ name, api }) {
@@ -53,7 +48,6 @@ function Display({ name, api }) {
         //const newIndex = currentIndex + 1
         //setCurrentIndex(newIndex)
 
-
     };
 
     const handleNextQuestion = () => {
@@ -77,6 +71,7 @@ function Display({ name, api }) {
     }
 
     const tableName = `/${name}`;
+    //console.log('tableName', tableName)
 
     const uploadScore = async () => {
         try {
@@ -120,13 +115,31 @@ function Display({ name, api }) {
                         Game ended! Your score in {name} is {score}
                     </h1>
 
-                    <div className="flex flex-col gap-4"
+                    <div
+                        className="flex flex-col gap-4"
                         style={{
                             fontSize: 20,
                         }}>
-                        <button style={buttonStyle} >Home page</button>
-                        <button style={buttonStyle} >Back to Categories</button>
-                        <Link to='/ChooseLeaderBoard' style={buttonStyle}>LeaderBoard</Link>
+
+                        <button
+
+                            style={buttonStyle} >
+                            Home page
+                        </button>
+
+                        <Link
+                            to='/Categories'
+                            style={buttonStyle} >
+                            Back to Categories
+                        </Link>
+
+                        <Link
+
+                            to='/ChooseLeaderBoard'
+                            style={buttonStyle}>
+                            LeaderBoard
+                        </Link>
+
                     </div>
                     {/* {uploadScore()} */}
                 </>
