@@ -1,14 +1,15 @@
-import React, { useRef, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from '../contexts/AuthContexts'
 import './Sign_up.css'
 import { Link, useHistory } from 'react-router-dom'
+import { GlobalContext } from '../contexts/GlobalContext'
 
 export default function Login() {
 
     const emailRef = useRef()
     const passwordRef = useRef()
-    const { login } = useAuth()
+    const { login } = useContext(GlobalContext)
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
     const history = useHistory()

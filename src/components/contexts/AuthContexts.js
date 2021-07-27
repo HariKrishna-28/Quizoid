@@ -33,7 +33,6 @@ export function AuthProvider({ children }) {
 
     function updatePassword(password) {
         return auth.currentUser.updatePassword(password)
-
     }
 
 

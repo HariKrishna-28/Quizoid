@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Card, Button, Alert } from 'react-bootstrap'
 import { Link, useHistory } from 'react-router-dom'
-import { useAuth } from '../contexts/AuthContexts'
+import { GlobalContext } from '../contexts/GlobalContext'
 import './Sign_up.css'
 
 export default function Dashboard() {
     const [error, setError] = useState("")
-    const { currentUser, logout } = useAuth()
+    const { currentUser, logout } = useContext(GlobalContext)
     const history = useHistory()
     const userName = currentUser.email.slice(0, (currentUser.email.indexOf('@')))
     window.$userName = userName
