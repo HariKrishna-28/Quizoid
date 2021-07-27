@@ -17,7 +17,11 @@
     "react-scripts": "4.0.3",
     "react-select": "^4.3.1",
     "react-spinners": "^0.11.0",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "@tailwindcss/jit": "^0.1.18",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
