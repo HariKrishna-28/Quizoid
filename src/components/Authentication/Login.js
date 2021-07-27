@@ -51,7 +51,7 @@ export default function Login() {
                             <Form.Control style={formStyle} className="form-top" type="email" ref={emailRef} required placeholder="Email" />
                         </Form.Group>
                         <Form.Group id="password">
-                            <Form.Control style={formStyle} className="form-end" size="lg" classNAme="input" type="password" ref={passwordRef} required placeholder="Password" />
+                            <Form.Control style={formStyle} className="form-end" classNAme="input" type="password" ref={passwordRef} required placeholder="Password" />
                         </Form.Group>
                         <Button disabled={loading} className="btn" type="submit">Log In</Button>
                     </Form>

@@ -9,6 +9,7 @@ import Signup from './components/Authentication/Signup';
 import Login from './components/Authentication/Login';
 import ForgotPassword from './components/Authentication/ForgotPassword';
 import { GlobalProvider } from './components/contexts/GlobalContext';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //const API_URL = 'https://opentdb.com/api.php?amount=10&category=9&type=multiple';
 

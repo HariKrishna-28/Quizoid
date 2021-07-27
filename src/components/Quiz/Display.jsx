@@ -133,11 +133,11 @@ function Display({ name, api }) {
                         <div className='grid grid-cols-2 gap-3 mt-6'>
 
 
-                            <button
-
-                                style={buttonStyle} >
-                                Home page
-                            </button>
+                            <Link
+                                to='/'
+                                style={buttonStyle}>
+                                Dashboard
+                            </Link>
 
                             {/* <Link
                             to='/Categories'

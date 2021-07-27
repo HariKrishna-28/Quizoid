@@ -8,7 +8,13 @@ export default function Dashboard() {
     const [error, setError] = useState("")
     const { currentUser, logout } = useContext(GlobalContext)
     const history = useHistory()
-    const UserName = currentUser.email.slice(0, (currentUser.email.indexOf('@')))
+    // const firstDigit = currentUser.email.match(/\d/) // will give you the first digit in the string
+    // const indexed = currentUser.email.indexOf(firstDigit)
+    // const UserName = currentUser.email.slice(0, indexed)
+    const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
+    // if (UserName.length === 0) {
+    //     const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
+    // }
     window.$uName = UserName;
 
     async function handleLogout() {
@@ -56,7 +62,7 @@ export default function Dashboard() {
                         </Link>
 
                         <div className="foot">
-                            <Button className="btn" variant="link" onClick={handleLogout}>
+                            <Button className="btn" style={{ textDecoration: 'none', }} variant="link" onClick={handleLogout}>
                                 Log Out
                             </Button>
 

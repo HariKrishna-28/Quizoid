@@ -44,17 +44,19 @@ const DisplayLeaderBoard = ({ tableName }) => {
         marginRight: '5rem',
         paddingRight: '3rem',
         paddingLeft: '3rem',
-        border: '1px solid black',
+        margin: '20rem',
+        border: '1px solid #7dced0',
         textAlign: 'center',
-        backgroundColor: '#7dced0',
-        borderRadius: '10',
+        // backgroundColor: '#7dced0',
+        // borderRadius: '10',
 
     }
 
     const headerStyle = {
         textAlign: 'center',
-        border: '1px solid black',
-        backgroundColor: '#7dced0',
+        border: '1px solid #7dced0',
+
+        // backgroundColor: '#7dced0',
         // borderRadius: '10',
 
 
@@ -73,13 +75,13 @@ const DisplayLeaderBoard = ({ tableName }) => {
                     <h2>{tableName}</h2>
                 </div> */}
                 <table className="table-auto text-xl " style={{
-                    border: '0px solid black',
+                    border: '1px solid #7dced0',
                     marginTop: '2rem',
 
 
                 }}>
                     <thead>
-                        <tr>
+                        <tr className='bg-blue-200 '>
                             <th style={headerStyle}>Position</th>
                             <th style={headerStyle}>Name </th>
                             {/*<th style={headerStyle}>Category </th> */}
@@ -89,7 +91,7 @@ const DisplayLeaderBoard = ({ tableName }) => {
                     {
                         userData.map((data, index) => {
                             return <tbody>
-                                <tr>
+                                <tr className='bg-blue-200'>
                                     <td style={rowStyle}> {parseInt(index) + 1}</td>
                                     <td style={rowStyle}> {data.userName} </td>
                                     {/*<td style={rowStyle}> {data.category} </td> */}
@@ -100,7 +102,7 @@ const DisplayLeaderBoard = ({ tableName }) => {
                     }
 
                 </table>
-            </div>
+            </div >
         )
 
     )

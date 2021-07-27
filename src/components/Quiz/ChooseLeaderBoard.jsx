@@ -86,7 +86,7 @@ const ChooseLeaderBoard = () => {
                                                                                 null)}
             </div>
 
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center gap-4'>
 
                 <Link to='/categories'
                     style={{
@@ -101,6 +101,21 @@ const ChooseLeaderBoard = () => {
                     }} >
                     Retake Quiz
                 </Link>
+
+                <Link
+                    to='/'
+                    style={{
+                        padding: '1rem 1rem',
+                        borderRadius: 10,
+                        color: 'black',
+                        backgroundColor: '#7dced0',
+                        fontWeight: '500',
+                        textDecoration: 'none',
+                        textAlign: 'center',
+                    }}>
+                    Dashboard
+                </Link>
+
             </div>
 
         </div>
