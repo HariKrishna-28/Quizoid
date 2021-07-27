@@ -1,8 +1,8 @@
 html {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   height: 100vh;
-  background: #3e4962;
-  color: #7dced0;
+  /* background: #3e4962; */
+  /* color: #7dced0; */
   font-size: 16px;
   font-weight: 200;
 }
@@ -11,8 +11,10 @@ html {
   vertical-align: middle;
   align-items: center;
   text-align: center;
-  padding: 2rem 2.5rem;
-  background-color: #3e4962;
+  padding: 3rem 3rem;
+  /* background-color: #3e4962; */
+  background-color: white;
+  color: black;
 }
 
 .containerX {
@@ -49,6 +51,7 @@ h1 {
   padding-top: 15px;
   padding-bottom: 0;
 }
+
 .links {
   color: #7dced0;
   text-decoration: solid;
@@ -61,23 +64,27 @@ h1 {
   padding: 16px;
   font-size: medium;
   border-radius: 4px 4px 0 0;
-  background: #7dced0;
+  /* background: #7dced0; */
   border: 1px solid black;
   display: block;
   margin: 0 auto;
-  width: 75%;
-  color: #3e4962;
+  width: 80%;
+  /* color: #3e4962; */
+  color: black;
+  background-color: white;
 }
 
 .form-mid {
   padding: 16px;
   font-size: medium;
   border: 1px solid black;
-  background: #7dced0;
+  /* background: #7dced0; */
   display: inherit;
   margin: 0 auto;
   width: 80%;
-  color: #3e4962;
+  /* color: #3e4962; */
+  color: black;
+  background-color: white;
 }
 
 .form-end {
@@ -85,12 +92,14 @@ h1 {
   font-size: medium;
   border-radius: 0 0 4px 4px;
   border: 1px solid black;
-  background: #7dced0;
+  /* background: #7dced0; */
   display: block;
   margin: auto;
   margin-bottom: 12px;
   width: 80%;
-  color: #3e4962;
+  /* color: #3e4962; */
+  color: black;
+  background-color: white;
 }
 
 .form-solo {
@@ -98,12 +107,14 @@ h1 {
   font-size: medium;
   border-radius: 4px 4px 4px 4px;
   border: 1px solid black;
-  background: #7dced0;
+  /* background: #7dced0; */
   display: block;
   margin: auto;
   margin-bottom: 12px;
   width: 80%;
-  color: #3e4962;
+  /* color: #3e4962; */
+  color: black;
+  background-color: white;
 }
 
 .btn {
@@ -113,7 +124,7 @@ h1 {
   font-size: medium;
   padding: 16px;
   border-radius: 0px;
-  background: #7dced0;
+  /* background: #7dced0; */
   border: none;
   box-shadow: 0 8px 15px 0 rgba(99, 99, 1, 0.4);
   display: block;
@@ -121,7 +132,7 @@ h1 {
   margin-top: 12px;
   width: 80%;
   color: #3e4962;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700;
-  letter-spacing: 1.05px;
+  /* letter-spacing: 1.05px; */
 }

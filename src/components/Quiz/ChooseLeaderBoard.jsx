@@ -26,10 +26,9 @@ const ChooseLeaderBoard = () => {
         async function handleChange(event) {
             // setCategory(index);
             // event.preventDefault();
-
             // This will set the index of the value passed from the options array
-
             // Modifying the default state, and apply.
+
             let category_state = category
             category_state = options.indexOf(event.target.value)
             setCategory(category_state)

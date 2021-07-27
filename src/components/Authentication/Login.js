@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from 'react'
-import { Form, Button, Card, Alert } from "react-bootstrap"
+import { Form, Button, Card } from "react-bootstrap"
 // import { useAuth } from '../contexts/AuthContexts'
 import './Sign_up.css'
 import { Link, useHistory } from 'react-router-dom'
@@ -44,7 +44,9 @@ export default function Login() {
                 <Card.Body>
                     {/* class="containerX" */}
                     <h1>Log In</h1>
-                    {error && <Alert variant="danger"> {error} </Alert>}
+                    {/* {error && <Alert variant="danger"> {error}  </Alert>} */}
+
+                    {error && <h4 className='text-red-500 bg-red-300 p-1 rounded-mt border-red-800 rounded'>{error}</h4>}
 
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email" >
