@@ -99,7 +99,7 @@ const ChooseLeaderBoard = () => {
                         textAlign: 'center',
                         //border: '0px solid black',
                     }} >
-                    Back to categories
+                    Retake Quiz
                 </Link>
             </div>
 

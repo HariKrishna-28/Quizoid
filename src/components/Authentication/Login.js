@@ -4,7 +4,6 @@ import { useAuth } from '../contexts/AuthContexts'
 import './Sign_up.css'
 import { Link, useHistory } from 'react-router-dom'
 
-
 export default function Login() {
 
     const emailRef = useRef()
@@ -31,10 +30,13 @@ export default function Login() {
     return (
         <>
             <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
+
             <Card className="topcon">
                 <Card.Body class="containerX">
+
                     <h1>Log In</h1>
                     {error && <Alert variant="danger"> {error} </Alert>}
+
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
                             <Form.Control className="form-top" type="email" ref={emailRef} required placeholder="Email" />
@@ -44,12 +46,15 @@ export default function Login() {
                         </Form.Group>
                         <Button disabled={loading} className="btn" type="submit">Log In</Button>
                     </Form>
+
                     <div className="foot">
                         <Link className="links" to="/forgot-password">Forgot Password? </Link>
                     </div>
+
                     <div className="foot">
                         Need an account? <Link to="/signup" className="links">Sign Up</Link>
                     </div>
+
                 </Card.Body>
             </Card>
         </>

@@ -61,6 +61,8 @@ function Display({ name, api }) {
 
     const buttonStyle = {
         paddingTop: 20,
+        paddingLeft: 3,
+        paddingRight: 3,
         paddingBottom: 20,
         borderRadius: 10,
         color: 'black',
@@ -93,7 +95,7 @@ function Display({ name, api }) {
         textAlign: 'center',
         Display: 'flex',
         justifyContent: 'center',
-        marginTop: '5rem',
+        marginTop: '8rem',
     }
 
 
@@ -122,25 +124,28 @@ function Display({ name, api }) {
                             fontSize: 20,
                         }}>
 
-                        <button
+                        <div className='grid grid-cols-2 gap-3 mt-6'>
 
-                            style={buttonStyle} >
-                            Home page
-                        </button>
 
-                        <Link
+                            <button
+
+                                style={buttonStyle} >
+                                Home page
+                            </button>
+
+                            {/* <Link
                             to='/Categories'
                             style={buttonStyle} >
                             Back to Categories
-                        </Link>
+                        </Link> */}
 
-                        <Link
+                            <Link
+                                to='/ChooseLeaderBoard'
+                                style={buttonStyle}>
+                                LeaderBoard
+                            </Link>
 
-                            to='/ChooseLeaderBoard'
-                            style={buttonStyle}>
-                            LeaderBoard
-                        </Link>
-
+                        </div>
                     </div>
                     {/* {uploadScore()} */}
                 </>

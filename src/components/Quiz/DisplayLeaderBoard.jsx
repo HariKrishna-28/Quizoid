@@ -47,12 +47,16 @@ const DisplayLeaderBoard = ({ tableName }) => {
         border: '1px solid black',
         textAlign: 'center',
         backgroundColor: '#7dced0',
+        borderRadius: '10',
+
     }
 
     const headerStyle = {
         textAlign: 'center',
         border: '1px solid black',
         backgroundColor: '#7dced0',
+        // borderRadius: '10',
+
 
     }
 
@@ -68,9 +72,10 @@ const DisplayLeaderBoard = ({ tableName }) => {
                 {/* <div className='flex justify-center items-center pt-4 '>
                     <h2>{tableName}</h2>
                 </div> */}
-                <table className="table-auto text-xl" style={{
+                <table className="table-auto text-xl " style={{
                     border: '0px solid black',
                     marginTop: '2rem',
+
 
                 }}>
                     <thead>

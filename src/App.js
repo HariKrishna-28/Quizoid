@@ -16,6 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
+
         {/* <Route path='/' exact component={Categories} /> */}
         <PrivateRoute exact path="/" component={Dashboard} />
         <PrivateRoute path="/update-profile" component={UpdateProfile} />
@@ -24,7 +25,7 @@ function App() {
         <Route path="/forgot-password" component={ForgotPassword} />
         <Route path='/ChooseLeaderBoard' exact component={ChooseLeaderBoard} />
         <Route path='/Categories' exact component={Categories} />
-
+        {/* <Categories /> */}
 
       </Switch>
     </BrowserRouter>)
