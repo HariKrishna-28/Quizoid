@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Display from './Display';
 
 //Displays the categpries for the user to choose from
@@ -107,22 +108,26 @@ function Categories() {
                                                                         api={'https://opentdb.com/api.php?amount=10&category=32&type=multiple'} />
                                                                     :
                                                                     (
-                                                                        <><header
-                                                                            className="font-bold text-4xl pt-3 "
-                                                                            style={{
-                                                                                textAlign: 'center',
-                                                                                color: '#7dced0',
-                                                                                marginTop: '5rem',
-                                                                                marginBottom: '1.5rem'
-                                                                            }}>
-                                                                            Choose your category
-                                                                        </header>
+                                                                        <>
+                                                                            <Link to='/'>
+                                                                                <img className="logo" alt="logo" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
+                                                                            </Link>
+                                                                            <header
+                                                                                className="font-bold text-4xl "
+                                                                                style={{
+                                                                                    textAlign: 'center',
+                                                                                    color: '#7dced0',
+                                                                                    marginTop: '1rem',
+                                                                                    marginBottom: '1rem'
+                                                                                }}>
+                                                                                Choose your category
+                                                                            </header>
 
 
                                                                             <div className="grid grid-cols-2 gap-6 mt-6 "
                                                                                 style={{
-                                                                                    marginTop: '5rem',
-                                                                                    marginBottom: '5rem'
+                                                                                    marginTop: '3rem',
+                                                                                    marginBottom: 'rem'
                                                                                 }}
 
                                                                             >

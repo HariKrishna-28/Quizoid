@@ -104,7 +104,7 @@ function Display({ name, api }) {
         textAlign: 'center',
         Display: 'flex',
         justifyContent: 'center',
-        marginTop: '5rem',
+        marginTop: '6rem',
     }
 
 
@@ -121,7 +121,6 @@ function Display({ name, api }) {
                             marginBottom: '2rem',
                             marginTop: '5rem',
 
-
                         }}
                     >
                         Game ended! Your score in {name} is {score}
@@ -134,8 +133,6 @@ function Display({ name, api }) {
                         }}>
 
                         <div className='grid grid-cols-2 gap-3 mt-6'>
-
-
                             <Link
                                 to='/'
                                 style={buttonStyle}>

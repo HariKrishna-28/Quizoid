@@ -11,7 +11,8 @@ html {
   vertical-align: middle;
   align-items: center;
   text-align: center;
-  padding: 3rem 3rem;
+  margin-top: 1.5rem;
+  padding: 2rem 2.5rem;
   /* background-color: #3e4962; */
   background-color: white;
   color: black;
@@ -33,13 +34,13 @@ html {
   margin: 0 auto;
   width: 100px;
   padding-top: 1rem;
-  padding-bottom: 10px;
+  padding-bottom: 0;
 }
 
 h1 {
   text-align: center;
   /* font-weight: 200; */
-  font-size: 24px;
+  /* font-size: 24px; */
   /* text-transform: uppercase; */
   /* letter-spacing: 10px; */
   padding-bottom: 15px;
@@ -123,17 +124,17 @@ h1 {
   text-decoration: none;
   font-size: medium;
   padding: 10px;
+  color: #3e4962;
   border-radius: 0px;
   color: white;
   border-radius: 10;
   /* background: #7dced0; */
   border: none;
-  box-shadow: 0 8px 15px 0 #3e4962;
+  /* box-shadow: 0 8px 15px 0 #3e4962; */
   display: block;
   margin: 0 auto;
   margin-top: 12px;
   width: 80%;
-  color: #3e4962;
   /* text-transform: uppercase; */
   font-weight: 700;
   /* letter-spacing: 1.05px; */

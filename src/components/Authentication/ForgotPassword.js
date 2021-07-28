@@ -34,7 +34,7 @@ export default function ForgotPassword() {
             <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
             <Card className="topcon">
                 <Card.Body >
-                    <h1>Password Reset</h1>
+                    <h1 className='font-bold text-3xl'>Password Reset</h1>
                     {error && <Alert variant="danger"> {error} </Alert>}
                     {message && <Alert variant="sucess"> {message} </Alert>}
                     <Form onSubmit={handleSubmit}>

@@ -36,6 +36,7 @@ export default function Signup() {
     const formStyle = {
         padding: '0.5rem 0.5rem',
         marginTop: '0.5rem',
+        width: '15rem',
         marginBottom: '0.5rem',
         border: '1px solid black',
         borderRadius: 10,
@@ -46,7 +47,7 @@ export default function Signup() {
             <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
             <Card className="topcon">
                 <Card.Body >
-                    <h1>Sign Up</h1>
+                    <h1 className='font-bold text-3xl'>Sign Up</h1>
                     {error && <Alert variant="danger"> {error} </Alert>}
                     <Form id="signup-form" onSubmit={handleSubmit}>
                         <Form.Group id="signup-email">

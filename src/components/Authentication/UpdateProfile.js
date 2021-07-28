@@ -48,6 +48,7 @@ export default function UpdateProfile() {
         marginBottom: '0.5rem',
         border: '1px solid black',
         borderRadius: 10,
+        width: '15rem',
     }
 
     return (
@@ -57,7 +58,7 @@ export default function UpdateProfile() {
             <Card className="topcon">
                 <Card.Body >
                     {/* className="containerX" */}
-                    <h1>Update Profile</h1>
+                    <h1 className='font-bold text-3xl'>Update Profile</h1>
                     {error && <Alert variant="danger"> {error} </Alert>}
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
