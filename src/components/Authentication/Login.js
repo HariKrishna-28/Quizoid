@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useState } from 'react'
-import { Form, Button, Card, Alert } from "react-bootstrap"
-import { useAuth } from '../contexts/AuthContexts'
+import { Form, Button, Card } from "react-bootstrap"
+// import { useAuth } from '../contexts/AuthContexts'
 import './Sign_up.css'
 import { Link, useHistory } from 'react-router-dom'
 import { GlobalContext } from '../contexts/GlobalContext'
@@ -28,22 +28,33 @@ export default function Login() {
         setLoading(false)
     }
 
+    const formStyle = {
+        padding: '0.5rem 0.5rem',
+        marginTop: '0.5rem',
+        marginBottom: '0.5rem',
+        border: '1px solid black',
+        borderRadius: 10,
+        width: '15rem',
+    }
+
     return (
         <>
             <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
 
             <Card className="topcon">
-                <Card.Body class="containerX">
+                <Card.Body>
+                    {/* class="containerX" */}
+                    <h1 className='font-bold text-3xl'>Log In</h1>
+                    {/* {error && <Alert variant="danger"> {error}  </Alert>} */}
 
-                    <h1>Log In</h1>
-                    {error && <Alert variant="danger"> {error} </Alert>}
+                    {error && <h4 className='text-red-500 bg-red-300 p-1 rounded-mt border-red-800 rounded'>{error}</h4>}
 
                     <Form onSubmit={handleSubmit}>
-                        <Form.Group id="email">
-                            <Form.Control className="form-top" type="email" ref={emailRef} required placeholder="Email" />
+                        <Form.Group id="email" >
+                            <Form.Control style={formStyle} className="form-top" type="email" ref={emailRef} required placeholder="Email" />
                         </Form.Group>
                         <Form.Group id="password">
-                            <Form.Control className="form-end" size="lg" classNAme="input" type="password" ref={passwordRef} required placeholder="Password" />
+                            <Form.Control style={formStyle} className="form-end" classNAme="input" type="password" ref={passwordRef} required placeholder="Password" />
                         </Form.Group>
                         <Button disabled={loading} className="btn" type="submit">Log In</Button>
                     </Form>

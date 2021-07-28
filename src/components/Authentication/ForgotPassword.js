@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useContext } from 'react'
 import { Form, Button, Card, Alert } from "react-bootstrap"
-import { useAuth } from '../contexts/AuthContexts'
+// import { useAuth } from '../contexts/AuthContexts'
+import { GlobalContext } from '../contexts/GlobalContext'
 import './Sign_up.css'
 import { Link } from 'react-router-dom'
 
@@ -8,7 +9,7 @@ import { Link } from 'react-router-dom'
 export default function ForgotPassword() {
 
     const emailRef = useRef()
-    const { resetPassword } = useAuth()
+    const { resetPassword } = useContext(GlobalContext)
     const [error, setError] = useState('')
     const [message, setMessage] = useState('')
     const [loading, setLoading] = useState(false)
@@ -32,8 +33,8 @@ export default function ForgotPassword() {
         <>
             <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
             <Card className="topcon">
-                <Card.Body class="containerX">
-                    <h1>Password Reset</h1>
+                <Card.Body >
+                    <h1 className='font-bold text-3xl'>Password Reset</h1>
                     {error && <Alert variant="danger"> {error} </Alert>}
                     {message && <Alert variant="sucess"> {message} </Alert>}
                     <Form onSubmit={handleSubmit}>

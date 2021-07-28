@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useContext } from 'react'
 import { Form, Button, Card, Alert } from "react-bootstrap"
-import { useAuth } from '../contexts/AuthContexts'
+// import { useAuth } from '../contexts/AuthContexts'
+import { GlobalContext } from '../contexts/GlobalContext'
 import './Sign_up.css'
 import { Link, useHistory } from 'react-router-dom'
 
@@ -10,7 +11,7 @@ export default function UpdateProfile() {
     const emailRef = useRef()
     const passwordRef = useRef()
     const confirmpasswordRef = useRef()
-    const { currentUser, updatePassword, updateEmail } = useAuth()
+    const { currentUser, updatePassword, updateEmail } = useContext(GlobalContext)
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
     const history = useHistory()
@@ -41,23 +42,33 @@ export default function UpdateProfile() {
         })
     }
 
+    const formStyle = {
+        padding: '0.5rem 0.5rem',
+        marginTop: '0.5rem',
+        marginBottom: '0.5rem',
+        border: '1px solid black',
+        borderRadius: 10,
+        width: '15rem',
+    }
+
     return (
         <>
 
             <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
             <Card className="topcon">
-                <Card.Body className="containerX">
-                    <h1>Update Profile</h1>
+                <Card.Body >
+                    {/* className="containerX" */}
+                    <h1 className='font-bold text-3xl'>Update Profile</h1>
                     {error && <Alert variant="danger"> {error} </Alert>}
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
-                            <Form.Control className="form-top" type="email" ref={emailRef} required placeholder="Email" defaultValue={currentUser.email} />
+                            <Form.Control className="form-top" style={formStyle} type="email" ref={emailRef} required placeholder="Email" defaultValue={currentUser.email} />
                         </Form.Group>
                         <Form.Group id="password">
-                            <Form.Control className="form-mid" type="password" ref={passwordRef} placeholder="Enter new Password" />
+                            <Form.Control className="form-mid" style={formStyle} type="password" ref={passwordRef} placeholder="Enter new Password" />
                         </Form.Group>
                         <Form.Group id="confirmpassword">
-                            <Form.Control className="form-end" type="password" ref={confirmpasswordRef} placeholder="Confirm Password" />
+                            <Form.Control className="form-end" style={formStyle} type="password" ref={confirmpasswordRef} placeholder="Confirm Password" />
                         </Form.Group>
                         <Button disabled={loading} className="btn" type="submit">Update</Button>
                     </Form>

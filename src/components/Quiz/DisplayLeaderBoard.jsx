@@ -2,7 +2,9 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import firebase from '../firebase';
 import RotateLoader from "react-spinners/RotateLoader";
-//import { useParams } from 'react-router-dom';
+// import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
+// import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
+// //import { useParams } from 'react-router-dom';
 
 const DisplayLeaderBoard = ({ tableName }) => {
     const [userData, setuserData] = useState([]);
@@ -20,7 +22,7 @@ const DisplayLeaderBoard = ({ tableName }) => {
                     id: id,
                     userName: data[id].userName,
                     userScore: data[id].userScore,
-                    category: data[id].category,
+                    //category: data[id].category,
                 })
             }
 
@@ -40,21 +42,23 @@ const DisplayLeaderBoard = ({ tableName }) => {
     }
 
     const rowStyle = {
-        marginLeft: '5rem',
-        marginRight: '5rem',
-        paddingRight: '3rem',
-        paddingLeft: '3rem',
-        border: '1px solid black',
+        paddingRight: '4rem',
+        paddingLeft: '4rem',
+        // paddingTop: '0.5rem',
         textAlign: 'center',
-        backgroundColor: '#7dced0',
-        borderRadius: '10',
-
+        // paddingBottom: '1rem',
+        // margin: '25rem',
+        // border: '1px solid #7dced0',
+        // backgroundColor: '#7dced0',
+        // borderRadius: '10',
+        // border: '1px solid black',
     }
 
     const headerStyle = {
         textAlign: 'center',
-        border: '1px solid black',
-        backgroundColor: '#7dced0',
+        // border: '1px solid #7dced0',
+        // border: '1px solid black',
+        // backgroundColor: '#7dced0',
         // borderRadius: '10',
 
 
@@ -66,30 +70,36 @@ const DisplayLeaderBoard = ({ tableName }) => {
         (
             <div style={{
                 textAlign: 'center',
+                paddingRight: '5rem',
+                paddingLeft: '5rem',
 
+                // backgroundColor: 'red',
             }}>
 
                 {/* <div className='flex justify-center items-center pt-4 '>
                     <h2>{tableName}</h2>
                 </div> */}
-                <table className="table-auto text-xl " style={{
-                    border: '0px solid black',
+                <table className="table-auto text-xl" style={{
+                    // border: '1px solid #7dced0',
+                    // border: '1px solid black',
                     marginTop: '2rem',
 
 
                 }}>
+
                     <thead>
-                        <tr>
+                        <tr className='bg-gray-600 text-white '>
                             <th style={headerStyle}>Position</th>
                             <th style={headerStyle}>Name </th>
                             {/*<th style={headerStyle}>Category </th> */}
                             <th style={headerStyle}>Score </th>
                         </tr>
                     </thead>
+
                     {
                         userData.map((data, index) => {
                             return <tbody>
-                                <tr>
+                                <tr className='bg-white'>
                                     <td style={rowStyle}> {parseInt(index) + 1}</td>
                                     <td style={rowStyle}> {data.userName} </td>
                                     {/*<td style={rowStyle}> {data.category} </td> */}
@@ -100,7 +110,8 @@ const DisplayLeaderBoard = ({ tableName }) => {
                     }
 
                 </table>
-            </div>
+
+            </div >
         )
 
     )

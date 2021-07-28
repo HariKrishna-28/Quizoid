@@ -1,4 +1,4 @@
-import React, { createContext,  useState, useEffect } from 'react'
+import React, { createContext, useState, useEffect } from 'react'
 import { auth } from '../firebase'
 
 
@@ -48,13 +48,13 @@ export const GlobalProvider = ({ children }) => {
         <GlobalContext.Provider value={{
             currentUser,
             login,
-            signup, 
+            signup,
             logout,
             resetPassword,
             updateEmail,
             updatePassword,
         }}>
-             {!loading && children}
+            {!loading && children}
         </GlobalContext.Provider>
     );
 }

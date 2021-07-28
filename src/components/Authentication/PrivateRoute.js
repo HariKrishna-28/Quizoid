@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Redirect, Route } from 'react-router-dom'
+// import { useAuth } from "../contexts/AuthContexts"
 import { GlobalContext } from '../contexts/GlobalContext';
 
 export default function PrivateRoute({ component: Component, ...rest }) {

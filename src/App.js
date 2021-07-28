@@ -9,6 +9,7 @@ import Signup from './components/Authentication/Signup';
 import Login from './components/Authentication/Login';
 import ForgotPassword from './components/Authentication/ForgotPassword';
 import { GlobalProvider } from './components/contexts/GlobalContext';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //const API_URL = 'https://opentdb.com/api.php?amount=10&category=9&type=multiple';
 
@@ -16,24 +17,23 @@ function App() {
 
   return (
     <GlobalProvider>
-    <BrowserRouter>
-      <Switch>
+      <BrowserRouter>
+        <Switch>
 
-        {/* <Route path='/' exact component={Categories} /> */}
-        <PrivateRoute exact path="/" component={Dashboard} />
-        <PrivateRoute path="/update-profile" component={UpdateProfile} />
-        <Route path="/signup" component={Signup} />
-        <Route path="/login" component={Login} />
-        <Route path="/forgot-password" component={ForgotPassword} />
-        <Route path='/ChooseLeaderBoard' exact component={ChooseLeaderBoard} />
-        <Route path='/Categories' exact component={Categories} />
-        {/* <Categories /> */}
+          {/* <Route path='/' exact component={Categories} /> */}
+          <PrivateRoute exact path="/" component={Dashboard} />
+          <PrivateRoute path="/update-profile" component={UpdateProfile} />
+          <Route path="/signup" component={Signup} />
+          <Route path="/login" component={Login} />
+          <Route path="/forgot-password" component={ForgotPassword} />
+          <Route path='/ChooseLeaderBoard' exact component={ChooseLeaderBoard} />
+          <Route path='/Categories' exact component={Categories} />
+          {/* <Categories /> */}
 
-      </Switch>
-    </BrowserRouter>
+        </Switch>
+      </BrowserRouter>
     </GlobalProvider>
   )
 }
 
 export default App;
-//{/*<Display api={'https://opentdb.com/api.php?amount=10&category=9&type=multiple'}  title = {/>*/}

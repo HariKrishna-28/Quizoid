@@ -11,9 +11,13 @@ function Display({ name, api }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [score, setScore] = useState(0);
     const [showAnswers, setShowAnswers] = useState(false);
+    // const n = window.$uName
+    const tableName = `/${name}`;
     //const [cate, setCate] = useState({ name });
 
     //const API_URL = `${api}`;
+    // const name = window.$userName
+
 
     useEffect(() => {
         fetch(`${api}`)
@@ -65,25 +69,30 @@ function Display({ name, api }) {
         paddingRight: 3,
         paddingBottom: 20,
         borderRadius: 10,
-        color: 'black',
-        backgroundColor: '#7dced0',
+        // color: 'black',
+        // backgroundColor: '#7dced0',
+        backgroundColor: 'white',
+        color: '#3e4962',
         fontWeight: '500',
         textDecoration: 'none',
         textAlign: 'center',
     }
 
-    const tableName = `/${name}`;
+
     //console.log('tableName', tableName)
+
+
 
     const uploadScore = async () => {
         try {
             console.log('logged in upload Data');
             const firestore = firebase.database().ref(tableName);
             let data = {
-                userName: 'check user',
-                category: name,
+                userName: window.$uName,
+                //category: name,
                 userScore: score,
             };
+            console.log(data);
             await firestore.push(data);
             console.log('pushed the data');
         } catch (error) {
@@ -95,7 +104,7 @@ function Display({ name, api }) {
         textAlign: 'center',
         Display: 'flex',
         justifyContent: 'center',
-        marginTop: '8rem',
+        marginTop: '6rem',
     }
 
 
@@ -112,7 +121,6 @@ function Display({ name, api }) {
                             marginBottom: '2rem',
                             marginTop: '5rem',
 
-
                         }}
                     >
                         Game ended! Your score in {name} is {score}
@@ -125,13 +133,11 @@ function Display({ name, api }) {
                         }}>
 
                         <div className='grid grid-cols-2 gap-3 mt-6'>
-
-
-                            <button
-
-                                style={buttonStyle} >
-                                Home page
-                            </button>
+                            <Link
+                                to='/'
+                                style={buttonStyle}>
+                                Dashboard
+                            </Link>
 
                             {/* <Link
                             to='/Categories'
@@ -160,6 +166,7 @@ function Display({ name, api }) {
                         }}>
                         {title}
                     </header> */}
+                    <h1 className='text-3xl font-bold' style={{ color: '#7dced0', }}>{name}</h1>
                     <Questionnaire
                         style={alignText}
                         data={questions[currentIndex]}
