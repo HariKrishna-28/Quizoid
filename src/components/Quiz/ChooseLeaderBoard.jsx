@@ -22,7 +22,7 @@ const ChooseLeaderBoard = () => {
             backgroundColor: 'white',
             color: '#3e4962',
             // justifyContent: 'center',
-            borderRadius: 10,
+            borderRadius: 5,
             padding: '0.5rem',
             // border: '1px solid black',
 
@@ -105,17 +105,9 @@ const ChooseLeaderBoard = () => {
                 <div className='flex justify-center items-center gap-6'>
 
                     <Link to='/categories'
+                        className="p-3 rounded-md bg-white text-center text-decoration-none"
                         style={{
-                            padding: '1rem 1rem',
-                            borderRadius: 10,
-                            // color: 'black',
-                            // backgroundColor: '#7dced0',
-                            backgroundColor: 'white',
-                            color: '#3e4962',
-                            fontWeight: '500',
-                            textDecoration: 'none',
-                            textAlign: 'center',
-                            //border: '0px solid black',
+                            backgroundColor: 'white', color: '#3e4962', fontWeight: '500',
                         }} >
                         Retake Quiz
 
@@ -124,17 +116,10 @@ const ChooseLeaderBoard = () => {
                     <Link
                         to='/'
 
+                        className="p-3 rounded-md bg-white text-center text-decoration-none"
                         style={{
-                            padding: '1rem 1rem',
-                            borderRadius: 10,
-                            // color: 'black',
-                            // backgroundColor: '#7dced0',
-                            backgroundColor: 'white',
-                            color: '#3e4962',
-                            fontWeight: '500',
-                            textDecoration: 'none',
-                            textAlign: 'center',
-                        }}>
+                            backgroundColor: 'white', color: '#3e4962', fontWeight: '500',
+                        }} >
                         Dashboard
                     </Link>
 

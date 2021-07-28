@@ -41,58 +41,39 @@ const DisplayLeaderBoard = ({ tableName }) => {
         return (el1.userScore - el2.userScore);
     }
 
-    const rowStyle = {
-        paddingRight: '4rem',
-        paddingLeft: '4rem',
-        // paddingTop: '0.5rem',
-        textAlign: 'center',
-        // paddingBottom: '1rem',
-        // margin: '25rem',
-        // border: '1px solid #7dced0',
-        // backgroundColor: '#7dced0',
-        // borderRadius: '10',
-        // border: '1px solid black',
-    }
+    // const rowStyle = {
+    //     paddingRight: '4rem',
+    //     paddingLeft: '4rem',
+    //     // paddingTop: '0.5rem',
+    //     textAlign: 'center',
+    //     // paddingBottom: '1rem',
+    //     // margin: '25rem',
+    //     // border: '1px solid #7dced0',
+    //     // backgroundColor: '#7dced0',
+    //     // borderRadius: '10',
+    //     // border: '1px solid black',
+    // }
 
-    const headerStyle = {
-        textAlign: 'center',
-        // border: '1px solid #7dced0',
-        // border: '1px solid black',
-        // backgroundColor: '#7dced0',
-        // borderRadius: '10',
-
-
-    }
+    // const headerStyle = {
+    //     textAlign: 'center',
+    //     // border: '1px solid #7dced0',
+    //     // border: '1px solid black',
+    //     // backgroundColor: '#7dced0',
+    //     // borderRadius: '10',
+    // }
 
 
 
     return (userData.length === 0 ? (<div className='flex justify-center items-center h-screen'><RotateLoader /></div>) :
-        (
-            <div style={{
-                textAlign: 'center',
-                paddingRight: '5rem',
-                paddingLeft: '5rem',
-
-                // backgroundColor: 'red',
-            }}>
-
-                {/* <div className='flex justify-center items-center pt-4 '>
-                    <h2>{tableName}</h2>
-                </div> */}
-                <table className="table-auto text-xl" style={{
-                    // border: '1px solid #7dced0',
-                    // border: '1px solid black',
-                    marginTop: '2rem',
-
-
-                }}>
+        (  <>
+            <div className="text-center rounded-md  lg:rounded-lg shadow-xl overflow-hidden bg-black mt-8">
+                <table className="text-sm lg:table-auto lg:text-xl">
 
                     <thead>
-                        <tr className='bg-gray-600 text-white '>
-                            <th style={headerStyle}>Position</th>
-                            <th style={headerStyle}>Name </th>
-                            {/*<th style={headerStyle}>Category </th> */}
-                            <th style={headerStyle}>Score </th>
+                        <tr className='bg-gray-600 text-white'>
+                            <th className='text-center'>Position</th>
+                            <th className='text-center'>Name </th>
+                            <th className='text-center'>Score </th>
                         </tr>
                     </thead>
 
@@ -100,10 +81,9 @@ const DisplayLeaderBoard = ({ tableName }) => {
                         userData.map((data, index) => {
                             return <tbody>
                                 <tr className='bg-white'>
-                                    <td style={rowStyle}> {parseInt(index) + 1}</td>
-                                    <td style={rowStyle}> {data.userName} </td>
-                                    {/*<td style={rowStyle}> {data.category} </td> */}
-                                    <td style={rowStyle}> {data.userScore} </td>
+                                    <td className='px-8 py-1 lg:px-16 text-center'> {parseInt(index) + 1}</td>
+                                    <td className='px-8 py-1 lg:px-16 text-center'> {data.userName} </td>
+                                    <td className='px-8 py-1 lg:px-16 text-center'> {data.userScore} </td>
                                 </tr>
                             </tbody>
                         })
@@ -112,6 +92,7 @@ const DisplayLeaderBoard = ({ tableName }) => {
                 </table>
 
             </div >
+            </>
         )
 
     )
