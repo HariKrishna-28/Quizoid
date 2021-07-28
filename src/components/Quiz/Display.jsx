@@ -69,8 +69,10 @@ function Display({ name, api }) {
         paddingRight: 3,
         paddingBottom: 20,
         borderRadius: 10,
-        color: 'black',
-        backgroundColor: '#7dced0',
+        // color: 'black',
+        // backgroundColor: '#7dced0',
+        backgroundColor: 'white',
+        color: '#3e4962',
         fontWeight: '500',
         textDecoration: 'none',
         textAlign: 'center',
@@ -90,6 +92,7 @@ function Display({ name, api }) {
                 //category: name,
                 userScore: score,
             };
+            console.log(data);
             await firestore.push(data);
             console.log('pushed the data');
         } catch (error) {
@@ -101,7 +104,7 @@ function Display({ name, api }) {
         textAlign: 'center',
         Display: 'flex',
         justifyContent: 'center',
-        marginTop: '8rem',
+        marginTop: '5rem',
     }
 
 
@@ -166,6 +169,7 @@ function Display({ name, api }) {
                         }}>
                         {title}
                     </header> */}
+                    <h1 className='text-3xl font-bold' style={{ color: '#7dced0', }}>{name}</h1>
                     <Questionnaire
                         style={alignText}
                         data={questions[currentIndex]}

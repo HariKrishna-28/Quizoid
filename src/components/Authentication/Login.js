@@ -34,6 +34,7 @@ export default function Login() {
         marginBottom: '0.5rem',
         border: '1px solid black',
         borderRadius: 10,
+        width: '18rem',
     }
 
     return (
@@ -43,7 +44,7 @@ export default function Login() {
             <Card className="topcon">
                 <Card.Body>
                     {/* class="containerX" */}
-                    <h1>Log In</h1>
+                    <h1 className='font-bold'>Log In</h1>
                     {/* {error && <Alert variant="danger"> {error}  </Alert>} */}
 
                     {error && <h4 className='text-red-500 bg-red-300 p-1 rounded-mt border-red-800 rounded'>{error}</h4>}

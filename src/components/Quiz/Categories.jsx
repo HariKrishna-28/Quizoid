@@ -112,7 +112,7 @@ function Categories() {
                                                                             style={{
                                                                                 textAlign: 'center',
                                                                                 color: '#7dced0',
-                                                                                marginTop: '1.5rem',
+                                                                                marginTop: '5rem',
                                                                                 marginBottom: '1.5rem'
                                                                             }}>
                                                                             Choose your category

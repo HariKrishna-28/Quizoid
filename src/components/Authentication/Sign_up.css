@@ -32,13 +32,13 @@ html {
   display: block;
   margin: 0 auto;
   width: 100px;
-  padding-top: 0;
+  padding-top: 1rem;
   padding-bottom: 10px;
 }
 
 h1 {
   text-align: center;
-  font-weight: 200;
+  /* font-weight: 200; */
   font-size: 24px;
   /* text-transform: uppercase; */
   /* letter-spacing: 10px; */
@@ -122,11 +122,13 @@ h1 {
   cursor: pointer;
   text-decoration: none;
   font-size: medium;
-  padding: 16px;
+  padding: 10px;
   border-radius: 0px;
+  color: white;
+  border-radius: 10;
   /* background: #7dced0; */
   border: none;
-  box-shadow: 0 8px 15px 0 rgba(99, 99, 1, 0.4);
+  box-shadow: 0 8px 15px 0 #3e4962;
   display: block;
   margin: 0 auto;
   margin-top: 12px;

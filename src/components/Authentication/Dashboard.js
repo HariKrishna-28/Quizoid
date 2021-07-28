@@ -8,10 +8,10 @@ export default function Dashboard() {
     const [error, setError] = useState("")
     const { currentUser, logout } = useContext(GlobalContext)
     const history = useHistory()
+    const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
     // const firstDigit = currentUser.email.match(/\d/) // will give you the first digit in the string
     // const indexed = currentUser.email.indexOf(firstDigit)
     // const UserName = currentUser.email.slice(0, indexed)
-    const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
     // if (UserName.length === 0) {
     //     const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
     // }
@@ -61,16 +61,26 @@ export default function Dashboard() {
                             Update Profile
                         </Link>
 
+                        <Link
+                            to='/Categories'
+                            className='btn' >
+                            Categories
+                        </Link>
+
+                        <Link
+                            to='/ChooseLeaderBoard'
+                            className='btn' >
+                            Leaderboards
+                        </Link>
+
+
                         <div className="foot">
                             <Button className="btn" style={{ textDecoration: 'none', }} variant="link" onClick={handleLogout}>
                                 Log Out
                             </Button>
 
-                            <Link
-                                to='/Categories'
-                                className='btn' >
-                                Categories
-                            </Link>
+
+
                         </div>
                     </Card.Body>
                 </Card>

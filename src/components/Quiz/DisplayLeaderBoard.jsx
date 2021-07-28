@@ -45,17 +45,17 @@ const DisplayLeaderBoard = ({ tableName }) => {
         paddingRight: '3rem',
         paddingLeft: '3rem',
         margin: '20rem',
-        border: '1px solid #7dced0',
+        // border: '1px solid #7dced0',
         textAlign: 'center',
         // backgroundColor: '#7dced0',
         // borderRadius: '10',
-
+        // border: '1px solid black',
     }
 
     const headerStyle = {
         textAlign: 'center',
-        border: '1px solid #7dced0',
-
+        // border: '1px solid #7dced0',
+        // border: '1px solid black',
         // backgroundColor: '#7dced0',
         // borderRadius: '10',
 
@@ -75,23 +75,25 @@ const DisplayLeaderBoard = ({ tableName }) => {
                     <h2>{tableName}</h2>
                 </div> */}
                 <table className="table-auto text-xl " style={{
-                    border: '1px solid #7dced0',
+                    // border: '1px solid #7dced0',
+                    border: '1px solid black',
                     marginTop: '2rem',
 
 
                 }}>
                     <thead>
-                        <tr className='bg-blue-200 '>
+                        <tr className='bg-gray-600 text-white '>
                             <th style={headerStyle}>Position</th>
                             <th style={headerStyle}>Name </th>
                             {/*<th style={headerStyle}>Category </th> */}
                             <th style={headerStyle}>Score </th>
                         </tr>
                     </thead>
+
                     {
                         userData.map((data, index) => {
                             return <tbody>
-                                <tr className='bg-blue-200'>
+                                <tr className='bg-white '>
                                     <td style={rowStyle}> {parseInt(index) + 1}</td>
                                     <td style={rowStyle}> {data.userName} </td>
                                     {/*<td style={rowStyle}> {data.category} </td> */}
