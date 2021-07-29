@@ -37,6 +37,7 @@ const DisplayLeaderBoard = ({ tableName }) => {
      * @param {Object} el2 
      * @returns {Number}
      */
+
     const sortData = (el1, el2) => {
         return (el1.userScore - el2.userScore);
     }

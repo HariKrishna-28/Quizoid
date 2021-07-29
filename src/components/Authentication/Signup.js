@@ -36,10 +36,10 @@ export default function Signup() {
     const formStyle = {
         padding: '0.5rem 0.5rem',
         marginTop: '0.5rem',
-        width: '15rem',
         marginBottom: '0.5rem',
-        border: '1px solid black',
-        borderRadius: 10,
+        // border: '1px solid black',
+        // borderRadius: 5,
+        width: '15rem',
     }
 
     return (
