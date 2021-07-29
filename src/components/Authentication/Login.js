@@ -37,6 +37,7 @@ export default function Login() {
         width: '15rem',
     }
 
+
     return (
         <>
             <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
@@ -47,7 +48,7 @@ export default function Login() {
                     <h1 className='font-bold text-3xl'>Log In</h1>
                     {/* {error && <Alert variant="danger"> {error}  </Alert>} */}
 
-                    {error && <h4 className='text-red-500 bg-red-300 p-1 rounded-mt border-red-800 rounded'>{error}</h4>}
+                    {error && <h4 className="bg-red-100 text-base border border-red-400 text-red-700 px-1 py-2 rounded relative" role='alert'>{error}</h4>}
 
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email" >
@@ -56,7 +57,7 @@ export default function Login() {
                         <Form.Group id="password">
                             <Form.Control style={formStyle} className="form-end" classNAme="input" type="password" ref={passwordRef} required placeholder="Password" />
                         </Form.Group>
-                        <Button disabled={loading} className="btn" type="submit">Log In</Button>
+                        <Button disabled={loading} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Log In</Button>
                     </Form>
 
                     <div className="foot">

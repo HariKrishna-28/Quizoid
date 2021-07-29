@@ -70,7 +70,7 @@ export default function UpdateProfile() {
                         <Form.Group id="confirmpassword">
                             <Form.Control className="form-end" style={formStyle} type="password" ref={confirmpasswordRef} placeholder="Confirm Password" />
                         </Form.Group>
-                        <Button disabled={loading} className="btn" type="submit">Update</Button>
+                        <Button disabled={loading} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Update</Button>
                     </Form>
                     <div className="foot">
                         <Link to="/" className="links">Cancel</Link>

@@ -1,10 +1,10 @@
 html {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   height: 100vh;
-  /* background: #3e4962; */
-  /* color: #7dced0; */
   font-size: 16px;
   font-weight: 200;
+  /* background: #3e4962; */
+  /* color: #7dced0; */
 }
 
 .topcon {
@@ -13,9 +13,9 @@ html {
   text-align: center;
   margin-top: 1.5rem;
   padding: 2rem 2.5rem;
-  /* background-color: #3e4962; */
   background-color: white;
   color: black;
+  /* background-color: #3e4962; */
 }
 
 .containerX {
@@ -39,11 +39,11 @@ html {
 
 h1 {
   text-align: center;
+  padding-bottom: 15px;
   /* font-weight: 200; */
   /* font-size: 24px; */
   /* text-transform: uppercase; */
   /* letter-spacing: 10px; */
-  padding-bottom: 15px;
 }
 
 .foot {
@@ -64,58 +64,58 @@ h1 {
 .form-top {
   padding: 16px;
   font-size: medium;
-  border-radius: 4px 4px 0 0;
-  /* background: #7dced0; */
-  border: 1px solid black;
   display: block;
   margin: 0 auto;
   width: 80%;
-  /* color: #3e4962; */
   color: black;
   background-color: white;
+  /* border-radius: 4px 4px 0 0; */
+  /* background: #7dced0; */
+  /* border: 1px solid black; */
+  /* color: #3e4962; */
 }
 
 .form-mid {
   padding: 16px;
   font-size: medium;
-  border: 1px solid black;
-  /* background: #7dced0; */
   display: inherit;
   margin: 0 auto;
   width: 80%;
-  /* color: #3e4962; */
   color: black;
   background-color: white;
+  /* border: 1px solid black; */
+  /* background: #7dced0; */
+  /* color: #3e4962; */
 }
 
 .form-end {
   padding: 16px;
   font-size: medium;
-  border-radius: 0 0 4px 4px;
-  border: 1px solid black;
-  /* background: #7dced0; */
   display: block;
   margin: auto;
   margin-bottom: 12px;
   width: 80%;
-  /* color: #3e4962; */
   color: black;
   background-color: white;
+  /* border-radius: 0 0 4px 4px; */
+  /* border: 1px solid black; */
+  /* background: #7dced0; */
+  /* color: #3e4962; */
 }
 
 .form-solo {
   padding: 16px;
   font-size: medium;
   border-radius: 4px 4px 4px 4px;
-  border: 1px solid black;
-  /* background: #7dced0; */
   display: block;
   margin: auto;
   margin-bottom: 12px;
   width: 80%;
-  /* color: #3e4962; */
   color: black;
   background-color: white;
+  /* background: #7dced0; */
+  /* color: #3e4962; */
+  /* border: 1px solid black; */
 }
 
 .btn {
@@ -125,17 +125,18 @@ h1 {
   font-size: medium;
   padding: 10px;
   color: #3e4962;
-  border-radius: 0px;
-  color: white;
-  border-radius: 10;
-  /* background: #7dced0; */
+  background-color: white;
+  border-radius: 5;
+  border: 1px solid black;
   border: none;
-  /* box-shadow: 0 8px 15px 0 #3e4962; */
   display: block;
   margin: 0 auto;
   margin-top: 12px;
   width: 80%;
-  /* text-transform: uppercase; */
   font-weight: 700;
+  /* border-radius: 0px; */
+  /* background: #7dced0; */
+  /* box-shadow: 0 8px 15px 0 #3e4962; */
+  /* text-transform: uppercase; */
   /* letter-spacing: 1.05px; */
 }
