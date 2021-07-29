@@ -18,7 +18,7 @@ html {
   /* background-color: #3e4962; */
 }
 
-.containerX {
+/* .containerX {
   position: relative;
   width: auto;
   max-width: 400px;
@@ -27,7 +27,7 @@ html {
   border: 1px solid #eeeeee;
   padding: 2rem 2rem;
   box-shadow: 0 0 8px 2px #ccc;
-}
+} */
 
 .logo {
   display: block;
@@ -118,7 +118,7 @@ h1 {
   /* border: 1px solid black; */
 }
 
-.btn {
+/* .btn {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
@@ -135,8 +135,8 @@ h1 {
   width: 80%;
   font-weight: 700;
   /* border-radius: 0px; */
-  /* background: #7dced0; */
-  /* box-shadow: 0 8px 15px 0 #3e4962; */
-  /* text-transform: uppercase; */
-  /* letter-spacing: 1.05px; */
-}
+/* background: #7dced0; */
+/* box-shadow: 0 8px 15px 0 #3e4962; */
+/* text-transform: uppercase; */
+/* letter-spacing: 1.05px; */
+/* } */
