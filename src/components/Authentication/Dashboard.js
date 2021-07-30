@@ -9,6 +9,7 @@ export default function Dashboard() {
     const { currentUser, logout } = useContext(GlobalContext)
     const history = useHistory()
     const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
+
     // const firstDigit = currentUser.email.match(/\d/) // will give you the first digit in the string
     // const indexed = currentUser.email.indexOf(firstDigit)
     // const UserName = currentUser.email.slice(0, indexed)

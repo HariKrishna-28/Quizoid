@@ -9,7 +9,7 @@ import RotateLoader from "react-spinners/RotateLoader";
 const DisplayLeaderBoard = ({ tableName }) => {
     const [userData, setuserData] = useState([]);
     const name = `/${tableName}`;
-    // console.log(name);
+    // ////console.log(name);
 
     useEffect(() => {
         const firestore = firebase.database().ref(name);
@@ -27,7 +27,14 @@ const DisplayLeaderBoard = ({ tableName }) => {
             }
 
             let data_ = userInfo.sort(sortData);
-            setuserData(data_.slice(data_.length - 10, data_.length).reverse());
+            //console.log(data_)
+            if (data_.length <= 10) {
+                setuserData(data_.reverse())
+            }
+            else {
+                setuserData(data_.slice(data_.length - 10, data_.length).reverse());
+                // setuserData(data_)
+            }
         })
     }, [name])
 

@@ -12,7 +12,7 @@ const Questionnaire = ({
         >
             {/* prints the questions*/}
             <div
-                className=" text-black p-10 rounded shadow-md"
+                className=" text-black p-10 rounded shadow-md "
                 style=
                 {{
                     backgroundColor: '#7dced0',

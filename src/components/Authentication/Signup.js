@@ -11,10 +11,10 @@ export default function Signup() {
     const passwordRef = useRef()
     const confirmpasswordRef = useRef()
     const { signup } = useContext(GlobalContext)
-    // const { verifyEmail } = useContext(GlobalContext)
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
     const history = useHistory()
+    // const { verifyEmail } = useContext(GlobalContext)
 
     async function handleSubmit(e) {
         e.preventDefault()
