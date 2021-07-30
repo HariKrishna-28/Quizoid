@@ -47,7 +47,7 @@ export default function ForgotPassword() {
                     {/* {error && <Alert variant="danger"> {error} </Alert>} */}
                     {error && <h4 className=" border border-red-400 text-red-700 px-1 py-2 text-base rounded relative" role='alert'>{error}</h4>}
                     {/* {message && <Alert variant="sucess"> {message} </Alert>} */}
-                    {message && <h4 className=" border border-green-400 text-green-700 text-base px-1 py-2 rounded relative" role='alert' style={{}}>{message}</h4>}
+                    {message && <h4 className=" border border-green-400 text-green-700 text-base px-1 py-2 rounded relative" role='alert' >{message}</h4>}
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
                             <Form.Control className="form-solo" style={formStyle} type="email" ref={emailRef} required placeholder="Email" />

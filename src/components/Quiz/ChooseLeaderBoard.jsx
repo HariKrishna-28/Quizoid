@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import DisplayLeaderBoard from './DisplayLeaderBoard';
 import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
 //import { Dropdown, Selection } from 'react-dropdown';
 
 
@@ -57,6 +57,7 @@ const ChooseLeaderBoard = () => {
 
     return (
         <div>
+
             {/* <img className="logo" src='../Assets/leaderboard@4x-8,png' alt='name' /> */}
             <Link
                 to='/'>
@@ -102,10 +103,10 @@ const ChooseLeaderBoard = () => {
                                                                                     null)}
                 </div>
 
-                <div className='flex justify-center items-center gap-6'>
+                <div className='flex justify-center items-center gap-4'>
 
                     <Link to='/categories'
-                        className="p-3 rounded-md bg-white text-center text-decoration-none"
+                        className="p-2 px-2 rounded-md bg-white text-center text-decoration-none"
                         style={{
                             backgroundColor: 'white', color: '#3e4962', fontWeight: '500',
                         }} >
@@ -115,8 +116,7 @@ const ChooseLeaderBoard = () => {
 
                     <Link
                         to='/'
-
-                        className="p-3 rounded-md bg-white text-center text-decoration-none"
+                        className="p-2 px-2 rounded-md bg-white text-center text-decoration-none"
                         style={{
                             backgroundColor: 'white', color: '#3e4962', fontWeight: '500',
                         }} >

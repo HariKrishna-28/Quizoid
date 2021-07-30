@@ -10,13 +10,13 @@ export default function Login() {
     const emailRef = useRef()
     const passwordRef = useRef()
     const { login } = useContext(GlobalContext)
+
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
     const history = useHistory()
 
     async function handleSubmit(e) {
         e.preventDefault()
-
         try {
             setError('')
             setLoading(true)
@@ -57,7 +57,7 @@ export default function Login() {
                         <Form.Group id="password">
                             <Form.Control style={formStyle} className="form-end" classNAme="input" type="password" ref={passwordRef} required placeholder="Password" />
                         </Form.Group>
-                        <Button disabled={loading} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Log In</Button>
+                        <Button disabled={loading} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 mt-1 rounded" type="submit">Log In</Button>
                     </Form>
 
                     <div className="foot">

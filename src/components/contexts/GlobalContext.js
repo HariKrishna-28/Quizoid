@@ -16,7 +16,9 @@ export const GlobalProvider = ({ children }) => {
     }
 
     async function signup(email, password) {
-        return await auth.createUserWithEmailAndPassword(email, password)
+        return (await auth.createUserWithEmailAndPassword(email, password)
+        )
+
     }
 
     async function logout() {
@@ -36,6 +38,15 @@ export const GlobalProvider = ({ children }) => {
         return await auth.currentUser.updatePassword(password)
     }
 
+    async function verifyEmail(email) {
+        return await auth.currentUser.sendEmailVerification(email)
+    }
+
+
+    // async function loginCheck(email){
+    //    return await auth.emailVer
+    // }
+
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(user => {
             setCurrentUser(user)
@@ -53,6 +64,7 @@ export const GlobalProvider = ({ children }) => {
             resetPassword,
             updateEmail,
             updatePassword,
+            verifyEmail,
         }}>
             {!loading && children}
         </GlobalContext.Provider>

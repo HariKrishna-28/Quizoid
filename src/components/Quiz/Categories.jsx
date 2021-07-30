@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Display from './Display';
+// import { GlobalContext } from '../contexts/GlobalContext'
 
 //Displays the categpries for the user to choose from
 
 function Categories() {
     const [state, setState] = useState(undefined);
+    // const { login } = useContext(GlobalContext)
 
 
 
@@ -20,7 +22,7 @@ function Categories() {
                     paddingLeft: 20,
                     paddingRight: 20,
                     fontSize: 20,
-                    borderRadius: 10,
+                    borderRadius: 5,
                     backgroundColor: `${bg}`,
                     border: 0,
                     textAlign: 'center',
@@ -120,6 +122,7 @@ function Categories() {
                                                                                     marginTop: '1rem',
                                                                                     marginBottom: '1rem'
                                                                                 }}>
+                                                                                {/* {console.log(login)} */}
                                                                                 Choose your category
                                                                             </header>
 

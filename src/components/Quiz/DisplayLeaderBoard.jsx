@@ -9,7 +9,7 @@ import RotateLoader from "react-spinners/RotateLoader";
 const DisplayLeaderBoard = ({ tableName }) => {
     const [userData, setuserData] = useState([]);
     const name = `/${tableName}`;
-    //console.log(name);
+    // console.log(name);
 
     useEffect(() => {
         const firestore = firebase.database().ref(name);

@@ -11,6 +11,7 @@ export default function Signup() {
     const passwordRef = useRef()
     const confirmpasswordRef = useRef()
     const { signup } = useContext(GlobalContext)
+    // const { verifyEmail } = useContext(GlobalContext)
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
     const history = useHistory()
@@ -26,7 +27,10 @@ export default function Signup() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
+            // await verifyEmail(emailRef.current.value)
+            console.log('verified')
             history.push("/")
+
         } catch {
             setError('Failed to Create an Account')
         }
@@ -42,10 +46,12 @@ export default function Signup() {
         width: '15rem',
     }
 
+
     return (
         <>
             <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
             <Card className="topcon">
+                {/* {console.log(auth)} */}
 
                 <Card.Body >
                     <h1 className='font-bold text-3xl'>Sign Up</h1>
