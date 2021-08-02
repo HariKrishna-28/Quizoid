@@ -21,13 +21,13 @@
 - <strong>Firebase Auth</strong> - Authentication <br> 
 
 ## Authentication and database
-- Firebase <br>
+- <strong>Firebase </strong><br>
 
 ## API
-- Open Trivia DB (quiz) <br>
+- <strong>Open Trivia DB (quiz) </strong><br>
 
 ## Hosting
-- Netlify <br>
+- <Strong>Netlify</strong> <br>
 
 ## Find the app <a href="https://quizoid.netlify.app/">here</a> <br> <br>
 
