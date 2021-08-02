@@ -16,9 +16,9 @@
 - React.js <br>
 
 ## Dependency Bucket
-- Tailwind CSS - CSS framework
-- Bootstrap - CSS framework
-- Firebase Auth - Authentication <br> 
+- <strong>Tailwind CSS</strong> - CSS framework
+- <strong>Bootstrap</strong> - CSS framework
+- <strong>Firebase Auth</strong> - Authentication <br> 
 
 ## Authentication and database
 - Firebase <br>
