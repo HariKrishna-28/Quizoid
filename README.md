@@ -20,7 +20,7 @@
 - <strong>Bootstrap</strong> - CSS framework
 - <strong>Firebase Auth</strong> - Authentication and Authorisation <br> 
 
-## Authentication and database
+## Backend
 - <strong>Firebase </strong><br>
 
 ## API
