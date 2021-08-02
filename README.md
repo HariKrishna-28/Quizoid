@@ -21,7 +21,7 @@
 - Firebase
 
 ## Authentication and database
--Firebase 
+- Firebase 
 
 ## API
 - Open Trivia DB (quiz)
