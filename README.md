@@ -4,7 +4,8 @@
 <p align=center>
 <a href="https://quizoid.netlify.app/"><img src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" width="90/" ></a>
 </p>
-<h2 align=center>Online gamified quiz application to improve knowledge with a gamified and fun experience </h2>
+<h2 align=center>An online gamified quiz application to improve knowledge with a gamified and fun experience </h2>
+<h3 align=center>Choose a quiz from sixteen categories and compete with other users to make it to the leaderboards in each category </h3>
 <h3>
   Authors: <br>
    <a href="https://github.com/HariKrishna-28">Hari Krishna C</a><br>
