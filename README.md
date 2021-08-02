@@ -7,8 +7,8 @@
 <h2 align=center>Online gamified quiz application to improve knowledge with a gamified and fun experience </h2>
 <h3>
   Authors: <br>
+   <a href="https://github.com/HariKrishna-28">Hari Krishna C</a><br>
   <a href="https://github.com/abishekvelavan">Abishek Velavan D</a><br>
-  <a href="https://github.com/HariKrishna-28">Hari Krishna C</a><br>
   <a href="https://github.com/gokul-siva-1322">Gokul B</a><br>
 </h3>
 
