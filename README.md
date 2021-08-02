@@ -29,7 +29,7 @@
 ## Hosting
 - Netlify
 
-## Find the app <a href="https://quizoid.netlify.app/">here</a>
+## Find the app <a href="https://quizoid.netlify.app/">here</a> <br> <br>
 
 
 > ## Live as if you were to die tomorrow. Learn as if you were to live forever
