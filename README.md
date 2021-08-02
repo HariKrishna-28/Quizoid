@@ -18,7 +18,7 @@
 ## Dependency Bucket
 - <strong>Tailwind CSS</strong> - CSS framework
 - <strong>Bootstrap</strong> - CSS framework
-- <strong>Firebase Auth</strong> - Authentication <br> 
+- <strong>Firebase Auth</strong> - Authentication and Authorisation <br> 
 
 ## Authentication and database
 - <strong>Firebase </strong><br>
