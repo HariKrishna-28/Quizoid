@@ -13,21 +13,21 @@
 </h3>
 
 ## Tech Stack
-- React.js
+- React.js <br>
 
 ## Dependency bucket
 - Tailwind CSS 
 - Bootstrap
-- Firebase
+- Firebase <br>
 
 ## Authentication and database
-- Firebase 
+- Firebase <br>
 
 ## API
-- Open Trivia DB (quiz)
+- Open Trivia DB (quiz) <br>
 
 ## Hosting
-- Netlify
+- Netlify <br>
 
 ## Find the app <a href="https://quizoid.netlify.app/">here</a> <br> <br>
 
