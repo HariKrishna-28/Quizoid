@@ -6,10 +6,10 @@
 </p>
 <h2 align=center>Online gamified quiz application to improve knowledge with a gamified and fun experience </h2>
 <h3>
-  Authors:
-  <a href="https://github.com/abishekvelavan">Abishek Velavan D</a>
-  <a href="https://github.com/HariKrishna-28">Hari Krishna C</a>
-  <a href="https://github.com/gokul-siva-1322">Gokul B</a>
+  Authors: <br>
+  <a href="https://github.com/abishekvelavan">Abishek Velavan D</a><br>
+  <a href="https://github.com/HariKrishna-28">Hari Krishna C</a><br>
+  <a href="https://github.com/gokul-siva-1322">Gokul B</a><br>
 </h3>
 
 ## Tech Stack
@@ -30,6 +30,7 @@
 - Netlify
 
 ## Find the app <a href="https://quizoid.netlify.app/">here</a>
+
 
 > ## Live as if you were to die tomorrow. Learn as if you were to live forever
 > ### - Mahatma Gandhi
