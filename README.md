@@ -15,10 +15,10 @@
 ## Tech Stack
 - React.js <br>
 
-## Dependency bucket
-- Tailwind CSS 
-- Bootstrap
-- Firebase <br>
+## Dependency Bucket
+- Tailwind CSS - CSS framework
+- Bootstrap - CSS framework
+- Firebase Auth - Authentication <br> 
 
 ## Authentication and database
 - Firebase <br>
