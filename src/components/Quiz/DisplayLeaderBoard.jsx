@@ -72,35 +72,39 @@ const DisplayLeaderBoard = ({ tableName }) => {
 
 
 
-    return (userData.length === 0 ? (<div className='flex justify-center items-center h-screen'><RotateLoader /></div>) :
-        (<>
-            <div className="text-center rounded-md  lg:rounded-lg shadow-xl overflow-hidden bg-black mt-8">
-                <table className="text-sm lg:table-auto lg:text-xl">
+    return (userData.length === 0 ?
+        (
+        <div className='flex justify-center items-center h-screen'><RotateLoader /></div>
+        )
+        :
+        (
+            <>
+                <div className="flex flex-col rounded-md  lg:rounded-lg shadow-xl overflow-hidden bg-black mt-8 mx-10">
+                    <table className="text-sm lg:table-auto lg:text-xl">
+                        <thead>
+                            <tr className='bg-gray-600 text-white'>
+                                <th className='text-center'>Position</th>
+                                <th className='text-center'>Name </th>
+                                <th className='text-center'>Score </th>
+                            </tr>
+                        </thead>
 
-                    <thead>
-                        <tr className='bg-gray-600 text-white'>
-                            <th className='text-center'>Position</th>
-                            <th className='text-center'>Name </th>
-                            <th className='text-center'>Score </th>
-                        </tr>
-                    </thead>
+                        {
+                            userData.map((data, index) => {
+                                return <tbody >
+                                    <tr className='bg-white'>
+                                        <td className='px-8 py-1 lg:px-16 text-center'> {parseInt(index) + 1}</td>
+                                        <td className='px-8 py-1 lg:px-16 text-center'> {data.userName} </td>
+                                        <td className='px-8 py-1 lg:px-16 text-center'> {data.userScore} </td>
+                                    </tr>
+                                </tbody>
+                            })
+                        }
 
-                    {
-                        userData.map((data, index) => {
-                            return <tbody >
-                                <tr className='bg-white'>
-                                    <td className='px-8 py-1 lg:px-16 text-center'> {parseInt(index) + 1}</td>
-                                    <td className='px-8 py-1 lg:px-16 text-center'> {data.userName} </td>
-                                    <td className='px-8 py-1 lg:px-16 text-center'> {data.userScore} </td>
-                                </tr>
-                            </tbody>
-                        })
-                    }
+                    </table>
 
-                </table>
-
-            </div >
-        </>
+                </div >
+            </>
         )
 
     )
