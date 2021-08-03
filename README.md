@@ -10,9 +10,9 @@
 <h3>Choose a quiz from sixteen categories and compete with other users to make it to the leaderboard</h3><br>
 <h3>
   Authors:
-  <a href="https://github.com/HariKrishna-28">Hari Krishna C</a>
-  <a href="https://github.com/abishekvelavan">Abishek Velavan D</a>
-  <a href="https://github.com/gokul-siva-1322">Gokul B</a>
+  <a href="https://github.com/HariKrishna-28">Hari Krishna C</a> <br>
+  <a href="https://github.com/abishekvelavan">Abishek Velavan D</a> <br>
+  <a href="https://github.com/gokul-siva-1322">Gokul B</a> <br>
 </h3><br>
 
 ## Tech Stack
