@@ -12,9 +12,9 @@ html {
   align-items: center;
   text-align: center;
   margin-top: 1.5rem;
-  padding: 1rem 1rem;
-  /* margin-left: 30rem; */
-  /* margin-right: 30rem; */
+  padding: 2rem 2rem;
+  margin-left: 32rem;
+  margin-right: 32rem;
   background-color: white;
   color: black;
   /* background-color: #3e4962; */
@@ -143,3 +143,18 @@ h1 {
 /* text-transform: uppercase; */
 /* letter-spacing: 1.05px; */
 /* } */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .topcon {
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1rem 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: white;
+    color: black;
+  }
+}
