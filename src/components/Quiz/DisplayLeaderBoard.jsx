@@ -79,7 +79,7 @@ const DisplayLeaderBoard = ({ tableName }) => {
         :
         (
             <>
-                <div className="flex flex-col rounded-md  lg:rounded-lg shadow-xl overflow-hidden bg-black mt-8 mx-10">
+                <div className="my-8 lg:mx-24 flex flex-col rounded-md  lg:rounded-lg shadow-xl overflow-hidden bg-yellow-400">
                     <table className="text-sm lg:table-auto lg:text-xl">
                         <thead>
                             <tr className='bg-gray-600 text-white'>

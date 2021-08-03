@@ -144,7 +144,40 @@ h1 {
 /* letter-spacing: 1.05px; */
 /* } */
 
+/* mobile */
 @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .topcon {
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1rem 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: white;
+    color: black;
+  }
+}
+
+/* Ipad */
+@media only screen and (max-width: 800px) {
+  /* For mobile phones: */
+  .topcon {
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1rem 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: white;
+    color: black;
+  }
+}
+
+/* Ipad-pro */
+@media only screen and (max-width: 1250px) {
   /* For mobile phones: */
   .topcon {
     vertical-align: middle;

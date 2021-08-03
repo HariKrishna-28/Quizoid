@@ -46,7 +46,6 @@ export default function Signup() {
         width: '15rem',
     }
 
-
     return (
         <>
             <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />

@@ -1,4 +1,5 @@
 import React from 'react';
+import "./App.css"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import PrivateRoute from './components/Authentication/PrivateRoute';
 import Dashboard from './components/Authentication/Dashboard';

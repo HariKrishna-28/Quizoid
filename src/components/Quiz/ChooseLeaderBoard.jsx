@@ -64,26 +64,23 @@ const ChooseLeaderBoard = () => {
                 <img className="logo" alt="logo" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
             </Link>
 
-            <div
-                style={{
-                    marginTop: '0rem',
-                    marginLeft: '2rem',
-                    marginRight: '2rem',
-                    // backgroundColor: 'white',
-                    // color: 'black',
-                    borderRadius: 10,
-                    padding: '2rem 2rem',
+            <div className="my-10 mx-[1.8px]"
+                // style={{
+                //     marginTop: '0rem',
+                //     marginLeft: '2rem',
+                //     marginRight: '2rem',
+                //     // backgroundColor: 'white',
+                //     // color: 'black',
+                //     borderRadius: 10,
+                //     padding: '2rem 2rem',
 
-                }}
+                // }}
             >
                 <div className='flex justify-center items-center'>
                     <DropDownMenu />
 
                 </div>
-                <div style={{
-                    marginTop: '2rem',
-                    marginBottom: '2rem',
-                }}>
+                <>
                     {(category === 0 ? <DisplayLeaderBoard tableName='General Knowledge' /> :
                         category === 1 ? <DisplayLeaderBoard tableName='Ecology' /> :
                             category === 2 ? <DisplayLeaderBoard tableName='Computer Science' /> :
@@ -101,7 +98,7 @@ const ChooseLeaderBoard = () => {
                                                                             category === 14 ? <DisplayLeaderBoard tableName='Comics' /> :
                                                                                 category === 15 ? <DisplayLeaderBoard tableName='Cartoons and Anime' /> :
                                                                                     null)}
-                </div>
+                </>
 
                 <div className='flex justify-center items-center gap-4'>
 
