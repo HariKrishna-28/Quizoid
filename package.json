@@ -19,6 +19,7 @@
     "react-select": "^4.3.1",
     "react-spinners": "^0.11.0",
     "react-super-responsive-table": "^5.2.0",
+    "tailwindcss": "^2.2.7",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -44,10 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.3.1",
-    "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.7"
   }
 }

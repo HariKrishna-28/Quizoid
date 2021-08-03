@@ -65,22 +65,22 @@ const ChooseLeaderBoard = () => {
             </Link>
 
             <div className="my-10 mx-[1.8px]"
-                // style={{
-                //     marginTop: '0rem',
-                //     marginLeft: '2rem',
-                //     marginRight: '2rem',
-                //     // backgroundColor: 'white',
-                //     // color: 'black',
-                //     borderRadius: 10,
-                //     padding: '2rem 2rem',
+            // style={{
+            //     marginTop: '0rem',
+            //     marginLeft: '2rem',
+            //     marginRight: '2rem',
+            //     // backgroundColor: 'white',
+            //     // color: 'black',
+            //     borderRadius: 10,
+            //     padding: '2rem 2rem',
 
-                // }}
+            // }}
             >
                 <div className='flex justify-center items-center'>
                     <DropDownMenu />
 
                 </div>
-                <>
+                <div className='mx-2'>
                     {(category === 0 ? <DisplayLeaderBoard tableName='General Knowledge' /> :
                         category === 1 ? <DisplayLeaderBoard tableName='Ecology' /> :
                             category === 2 ? <DisplayLeaderBoard tableName='Computer Science' /> :
@@ -98,7 +98,7 @@ const ChooseLeaderBoard = () => {
                                                                             category === 14 ? <DisplayLeaderBoard tableName='Comics' /> :
                                                                                 category === 15 ? <DisplayLeaderBoard tableName='Cartoons and Anime' /> :
                                                                                     null)}
-                </>
+                </div>
 
                 <div className='flex justify-center items-center gap-4'>
 

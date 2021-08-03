@@ -120,18 +120,19 @@ function Categories() {
                                                                                 <img className="logo" alt="logo" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
                                                                             </Link>
                                                                             <header
-                                                                                className="font-bold text-4xl "
+                                                                                className="font-bold text-4xl mx-1 "
                                                                                 style={{
                                                                                     textAlign: 'center',
                                                                                     color: '#7dced0',
                                                                                     marginTop: '1rem',
                                                                                     marginBottom: '1rem'
+
                                                                                 }}>
                                                                                 {/* {console.log(login)} */}
                                                                                 Choose your category
                                                                             </header>
 
-                                                                            <div className="grid grid-cols-2 gap-6 mr-8 ml-8 lg:grid-cols-4 lg:mr-40 lg:ml-40"
+                                                                            <div className="grid grid-cols-2 gap-6 mr-5 ml-5 lg:grid-cols-4 lg:mr-40 lg:ml-40"
                                                                             // style={{
                                                                             //     marginTop: '3rem',
                                                                             // }}

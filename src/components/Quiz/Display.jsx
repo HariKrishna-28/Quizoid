@@ -104,6 +104,8 @@ function Display({ name, api }) {
         textAlign: 'center',
         Display: 'flex',
         justifyContent: 'center',
+        paddingLeft: '0rem',
+        paddingRight: '0rem',
         marginTop: '6rem',
     }
 
@@ -114,7 +116,7 @@ function Display({ name, api }) {
 
             {currentIndex >= questions.length ? (
                 <>
-                    <h2 className="text-3xl font-bold"
+                    <h2 className="text-3xl font-bold mx-4"
                         style={{
                             color: '#7dced0',
                             textAlign: 'center',
@@ -127,7 +129,7 @@ function Display({ name, api }) {
                     </h2>
 
                     <div
-                        className="flex flex-col gap-4"
+                        className="flex flex-col gap-4 mx-4"
                         style={{
                             fontSize: 20,
                         }}>
@@ -135,7 +137,8 @@ function Display({ name, api }) {
                         <div className='grid grid-cols-2 gap-3 mt-6'>
                             <Link
                                 to='/'
-                                style={buttonStyle}>
+                                style={buttonStyle}
+                            >
                                 Dashboard
                             </Link>
 

@@ -3,7 +3,7 @@ import { Card, Button, Alert } from 'react-bootstrap'
 import { Link, useHistory } from 'react-router-dom'
 import { GlobalContext } from '../contexts/GlobalContext'
 import './Sign_up.css'
-import Home from '../Home Page/Home'
+// import Home from '../Home Page/Home'
 
 export default function Dashboard() {
     const [error, setError] = useState("")
@@ -83,7 +83,6 @@ export default function Dashboard() {
                         </div>
                     </Card.Body>
                 </Card>
-
             </>
         )
 
