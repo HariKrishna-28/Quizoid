@@ -65,8 +65,8 @@ function Display({ name, api }) {
 
     const buttonStyle = {
         paddingTop: 20,
-        paddingLeft: 3,
-        paddingRight: 3,
+        paddingLeft: 2,
+        paddingRight: 2,
         paddingBottom: 20,
         borderRadius: 10,
         // color: 'black',
@@ -139,6 +139,7 @@ function Display({ name, api }) {
                                 Dashboard
                             </Link>
 
+
                             {/* <Link
                             to='/Categories'
                             style={buttonStyle} >
@@ -167,6 +168,7 @@ function Display({ name, api }) {
                         {title}
                     </header> */}
                     <h1 className='text-3xl font-bold' style={{ color: '#7dced0', }}>{name}</h1>
+
                     <Questionnaire
                         style={alignText}
                         data={questions[currentIndex]}

@@ -3,6 +3,7 @@ import { Card, Button, Alert } from 'react-bootstrap'
 import { Link, useHistory } from 'react-router-dom'
 import { GlobalContext } from '../contexts/GlobalContext'
 import './Sign_up.css'
+import Home from '../Home Page/Home'
 
 export default function Dashboard() {
     const [error, setError] = useState("")
@@ -45,8 +46,7 @@ export default function Dashboard() {
 
     function userInfo() {
         return (
-            <>
-                <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
+            <><img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
 
                 <Card className="topcon">
                     <h2>Hi, {window.$uName}</h2>
@@ -80,11 +80,10 @@ export default function Dashboard() {
                                 Log Out
                             </Button>
 
-
-
                         </div>
                     </Card.Body>
                 </Card>
+
 
             </>
         )

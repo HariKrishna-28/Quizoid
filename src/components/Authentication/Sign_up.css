@@ -12,7 +12,9 @@ html {
   align-items: center;
   text-align: center;
   margin-top: 1.5rem;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
+  /* margin-left: 30rem; */
+  /* margin-right: 30rem; */
   background-color: white;
   color: black;
   /* background-color: #3e4962; */

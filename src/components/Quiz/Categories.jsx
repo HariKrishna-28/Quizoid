@@ -110,7 +110,12 @@ function Categories() {
                                                                         api={'https://opentdb.com/api.php?amount=10&category=32&type=multiple'} />
                                                                     :
                                                                     (
-                                                                        <>
+                                                                        <div
+                                                                        // style={{
+                                                                        //     marginLeft: '5rem',
+                                                                        //     marginRight: '5rem',
+                                                                        // }}
+                                                                        >
                                                                             <Link to='/'>
                                                                                 <img className="logo" alt="logo" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
                                                                             </Link>
@@ -126,12 +131,10 @@ function Categories() {
                                                                                 Choose your category
                                                                             </header>
 
-
-                                                                            <div className="grid grid-cols-2 gap-6 mt-6 lg:grid-cols-4 gap-6 mt-6 "
-                                                                                style={{
-                                                                                    marginTop: '3rem',
-                                                                                    marginBottom: 'rem'
-                                                                                }}
+                                                                            <div className="grid grid-cols-2 gap-6 mr-8 ml-8 lg:grid-cols-4 lg:mr-40 lg:ml-40"
+                                                                            // style={{
+                                                                            //     marginTop: '3rem',
+                                                                            // }}
 
                                                                             >
                                                                                 {/* category tiles */}
@@ -235,10 +238,9 @@ function Categories() {
                                                                                     onClick={clickEvent} />
 
                                                                             </div>
-                                                                        </>
+                                                                        </div>
                                                                     )
         )
     )
-
 }
 export default Categories;
