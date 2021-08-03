@@ -12,13 +12,15 @@ html {
   align-items: center;
   text-align: center;
   margin-top: 1.5rem;
-  padding: 2rem 2.5rem;
+  padding: 2rem 2rem;
+  margin-left: 32rem;
+  margin-right: 32rem;
   background-color: white;
   color: black;
   /* background-color: #3e4962; */
 }
 
-.containerX {
+/* .containerX {
   position: relative;
   width: auto;
   max-width: 400px;
@@ -27,7 +29,7 @@ html {
   border: 1px solid #eeeeee;
   padding: 2rem 2rem;
   box-shadow: 0 0 8px 2px #ccc;
-}
+} */
 
 .logo {
   display: block;
@@ -54,22 +56,23 @@ h1 {
 }
 
 .links {
-  color: #7dced0;
+  /* color: #7dced0; */
   text-decoration: solid;
   font-size: large;
   display: inline;
   padding-bottom: 10px;
+  color: rgba(59, 130, 246);
 }
 
 .form-top {
   padding: 16px;
   font-size: medium;
-  border-radius: 4px 4px 0 0;
   display: block;
   margin: 0 auto;
   width: 80%;
   color: black;
   background-color: white;
+  /* border-radius: 4px 4px 0 0; */
   /* background: #7dced0; */
   /* border: 1px solid black; */
   /* color: #3e4962; */
@@ -91,13 +94,13 @@ h1 {
 .form-end {
   padding: 16px;
   font-size: medium;
-  border-radius: 0 0 4px 4px;
   display: block;
   margin: auto;
   margin-bottom: 12px;
   width: 80%;
   color: black;
   background-color: white;
+  /* border-radius: 0 0 4px 4px; */
   /* border: 1px solid black; */
   /* background: #7dced0; */
   /* color: #3e4962; */
@@ -118,7 +121,7 @@ h1 {
   /* border: 1px solid black; */
 }
 
-.btn {
+/* .btn {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
@@ -135,8 +138,23 @@ h1 {
   width: 80%;
   font-weight: 700;
   /* border-radius: 0px; */
-  /* background: #7dced0; */
-  /* box-shadow: 0 8px 15px 0 #3e4962; */
-  /* text-transform: uppercase; */
-  /* letter-spacing: 1.05px; */
+/* background: #7dced0; */
+/* box-shadow: 0 8px 15px 0 #3e4962; */
+/* text-transform: uppercase; */
+/* letter-spacing: 1.05px; */
+/* } */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .topcon {
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1rem 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: white;
+    color: black;
+  }
 }
