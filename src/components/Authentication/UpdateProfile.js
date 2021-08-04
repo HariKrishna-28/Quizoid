@@ -62,18 +62,18 @@ export default function UpdateProfile() {
                     {error && <Alert variant="danger"> {error} </Alert>}
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
-                            <Form.Control className="form-top" style={formStyle} type="email" ref={emailRef} required placeholder="Email" defaultValue={currentUser.email} />
+                            <Form.Control className="formx-top" style={formStyle} type="email" ref={emailRef} required placeholder="Email" defaultValue={currentUser.email} />
                         </Form.Group>
                         <Form.Group id="password">
-                            <Form.Control className="form-mid" style={formStyle} type="password" ref={passwordRef} placeholder="Enter new Password" />
+                            <Form.Control className="formx-mid" style={formStyle} type="password" ref={passwordRef} placeholder="Enter new Password" />
                         </Form.Group>
                         <Form.Group id="confirmpassword">
-                            <Form.Control className="form-end" style={formStyle} type="password" ref={confirmpasswordRef} placeholder="Confirm Password" />
+                            <Form.Control className="formx-end" style={formStyle} type="password" ref={confirmpasswordRef} placeholder="Confirm Password" />
                         </Form.Group>
                         <Button disabled={loading} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Update</Button>
                     </Form>
                     <div className="foot">
-                        <Link to="/" className="links">Cancel</Link>
+                        <Link to="/MyProfile" className="links">Cancel</Link>
                     </div>
                 </Card.Body>
             </Card>

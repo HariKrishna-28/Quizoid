@@ -35,6 +35,7 @@ export default function Login() {
         // border: '1px solid black',
         // borderRadius: 5,
         width: '15rem',
+        fontWeight: 'normal',
     }
 
 
@@ -52,12 +53,12 @@ export default function Login() {
 
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email" >
-                            <Form.Control style={formStyle} className="form-top" type="email" ref={emailRef} required placeholder="Email" />
+                            <Form.Control style={formStyle} className="formx-top" type="email" ref={emailRef} required placeholder="Email" />
                         </Form.Group>
                         <Form.Group id="password">
-                            <Form.Control style={formStyle} className="form-end" classNAme="input" type="password" ref={passwordRef} required placeholder="Password" />
+                            <Form.Control style={formStyle} className="formx-end" classNAme="input" type="password" ref={passwordRef} required placeholder="Password" />
                         </Form.Group>
-                        <Button disabled={loading} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 mt-1 rounded" type="submit">Log In</Button>
+                        <Button disabled={loading} className="bg-blue-500 hover:bg-blue-700 text-white items-center font-bold py-2 px-5 mt-1 rounded" type="submit">Log In</Button>
                     </Form>
 
                     <div className="foot">

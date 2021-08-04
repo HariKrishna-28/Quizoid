@@ -64,7 +64,7 @@ h1 {
   color: rgba(59, 130, 246);
 }
 
-.form-top {
+.formx-top {
   padding: 16px;
   font-size: medium;
   display: block;
@@ -78,7 +78,7 @@ h1 {
   /* color: #3e4962; */
 }
 
-.form-mid {
+.formx-mid {
   padding: 16px;
   font-size: medium;
   display: inherit;
@@ -91,7 +91,7 @@ h1 {
   /* color: #3e4962; */
 }
 
-.form-end {
+.formx-end {
   padding: 16px;
   font-size: medium;
   display: block;
@@ -106,7 +106,7 @@ h1 {
   /* color: #3e4962; */
 }
 
-.form-solo {
+.formx-solo {
   padding: 16px;
   font-size: medium;
   border-radius: 4px 4px 4px 4px;

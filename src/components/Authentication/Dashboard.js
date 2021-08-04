@@ -1,15 +1,23 @@
-import React, { useContext, useState } from 'react'
-import { Card, Button, Alert } from 'react-bootstrap'
-import { Link, useHistory } from 'react-router-dom'
+import React, { useContext } from 'react'
+// import { Card, Button, Alert } from 'react-bootstrap'
+import { useHistory } from 'react-router-dom'
 import { GlobalContext } from '../contexts/GlobalContext'
 import './Sign_up.css'
-// import Home from '../Home Page/Home'
+import Home from '../Home page/pages/Home'
 
 export default function Dashboard() {
-    const [error, setError] = useState("")
-    const { currentUser, logout } = useContext(GlobalContext)
+    // const [error, setError] = useState("")
+    const { currentUser } = useContext(GlobalContext)
     const history = useHistory()
-    const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
+
+    try {
+        const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
+        window.$uName = UserName;
+    }
+    catch {
+        history.push('/login')
+    }
+
 
     // const firstDigit = currentUser.email.match(/\d/) // will give you the first digit in the string
     // const indexed = currentUser.email.indexOf(firstDigit)
@@ -17,21 +25,20 @@ export default function Dashboard() {
     // if (UserName.length === 0) {
     //     const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
     // }
-    window.$uName = UserName;
 
-    async function handleLogout() {
-        setError('')
+    // async function handleLogout() {
+    //     setError('')
 
-        try {
-            await logout()
-            history.push('/login')
+    //     try {
+    //         await logout()
+    //         history.push('/login')
 
-        } catch {
-            setError('Failed to log out')
+    //     } catch {
+    //         setError('Failed to log out')
 
-        }
+    //     }
 
-    }
+    // }
     // const buttonStyle = {
     //     // paddingTop: 20,
     //     // paddingBottom: 20,
@@ -46,9 +53,11 @@ export default function Dashboard() {
 
     function userInfo() {
         return (
-            <><img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
+            <>
+                <Home />
+                {/* <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
 
-                <Card className="topcon">
+                <Card className="topcon" >
                     <h2>Hi, {window.$uName}</h2>
 
                     <Card.Body >
@@ -56,7 +65,7 @@ export default function Dashboard() {
                         <h1>DashBoard-Profile</h1>
 
                         {error && <Alert class="alerts" variant="danger"> {error} </Alert>}
-                        {/* <p className="foot"><strong>Email: </strong>{currentUser.email}</p> */}
+                        <p className="foot"><strong>Email: </strong>{currentUser.email}</p>
 
                         <Link to="update-profile" className="btn">
                             Update Profile
@@ -82,7 +91,7 @@ export default function Dashboard() {
 
                         </div>
                     </Card.Body>
-                </Card>
+                </Card> */}
             </>
         )
 

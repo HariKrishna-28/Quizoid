@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import Display from './Display';
 // import { GlobalContext } from '../contexts/GlobalContext'
 
@@ -7,7 +7,12 @@ import Display from './Display';
 
 function Categories() {
     const [state, setState] = useState(undefined);
+    const history = useHistory()
+    const uN = window.$uName
     // const { login } = useContext(GlobalContext)
+    if (uN === undefined) {
+        history.push('/login')
+    }
 
 
 

@@ -62,11 +62,11 @@ export default function Signup() {
                     <Form id="signup-form" onSubmit={handleSubmit}>
 
                         <Form.Group id="signup-email">
-                            <Form.Control className="form-top" style={formStyle} type="email" ref={emailRef} required placeholder="Email" />
+                            <Form.Control className="formx-top" style={formStyle} type="email" ref={emailRef} required placeholder="Email" />
                         </Form.Group>
 
                         <Form.Group id="password">
-                            <Form.Control className="form-mid" type="password" style={formStyle} ref={passwordRef} placeholder="Password"
+                            <Form.Control className="formx-mid" type="password" style={formStyle} ref={passwordRef} placeholder="Password"
                                 pattern="(?=.*\d)(?=.[a-z])(?=.[A-z]).{8,}"
                                 title="Must contain at least one number[0-9] and one uppercase[A-Z] and lowercase[a-b] letter,and atleast 8 or more character"
                                 required
@@ -75,7 +75,7 @@ export default function Signup() {
                         </Form.Group>
 
                         <Form.Group id="confirmpassword">
-                            <Form.Control className="form-end" type="password" style={formStyle} ref={confirmpasswordRef} required placeholder="Confirm Password" />
+                            <Form.Control className="formx-end" type="password" style={formStyle} ref={confirmpasswordRef} required placeholder="Confirm Password" />
                         </Form.Group>
 
                         <Button disabled={loading} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded" type="submit">Sign Up</Button>

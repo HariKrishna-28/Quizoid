@@ -50,7 +50,7 @@ export default function ForgotPassword() {
                     {message && <h4 className=" border border-green-400 text-green-700 text-base px-1 py-2 rounded relative" role='alert' >{message}</h4>}
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
-                            <Form.Control className="form-solo" style={formStyle} type="email" ref={emailRef} required placeholder="Email" />
+                            <Form.Control className="formx-solo" style={formStyle} type="email" ref={emailRef} required placeholder="Email" />
                         </Form.Group>
                         <Button disabled={loading} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">
                             Reset Password
