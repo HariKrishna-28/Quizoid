@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 import { GlobalContext } from '../contexts/GlobalContext'
 import './Sign_up.css'
-import Home from '../Home page/pages/Home'
+import Home from '../Home Page/pages/Home'
 
 export default function Dashboard() {
     // const [error, setError] = useState("")
@@ -14,10 +14,10 @@ export default function Dashboard() {
         const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
         window.$uName = UserName;
     }
+
     catch {
         history.push('/login')
     }
-
 
     // const firstDigit = currentUser.email.match(/\d/) // will give you the first digit in the string
     // const indexed = currentUser.email.indexOf(firstDigit)
@@ -49,7 +49,6 @@ export default function Dashboard() {
     //     // textDecoration: 'none',
     //     // textAlign: 'center',
     // }
-
 
     function userInfo() {
         return (
