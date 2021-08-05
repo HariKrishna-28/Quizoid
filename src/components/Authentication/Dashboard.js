@@ -51,48 +51,7 @@ export default function Dashboard() {
     // }
 
     function userInfo() {
-        return (
-            <>
-                <Home />
-                {/* <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
-
-                <Card className="topcon" >
-                    <h2>Hi, {window.$uName}</h2>
-
-                    <Card.Body >
-
-                        <h1>DashBoard-Profile</h1>
-
-                        {error && <Alert class="alerts" variant="danger"> {error} </Alert>}
-                        <p className="foot"><strong>Email: </strong>{currentUser.email}</p>
-
-                        <Link to="update-profile" className="btn">
-                            Update Profile
-                        </Link>
-
-                        <Link
-                            to='/Categories'
-                            className='btn' >
-                            Categories
-                        </Link>
-
-                        <Link
-                            to='/ChooseLeaderBoard'
-                            className='btn' >
-                            Leaderboards
-                        </Link>
-
-
-                        <div className="foot">
-                            <Button className="btn" style={{ textDecoration: 'none', }} variant="link" onClick={handleLogout}>
-                                Log Out
-                            </Button>
-
-                        </div>
-                    </Card.Body>
-                </Card> */}
-            </>
-        )
+        return (<Home />)
 
     }
 
