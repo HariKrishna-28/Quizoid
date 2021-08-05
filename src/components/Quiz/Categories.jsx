@@ -1,18 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import Display from './Display';
-// import { GlobalContext } from '../contexts/GlobalContext'
+import { GlobalContext } from '../contexts/GlobalContext'
 
 //Displays the categpries for the user to choose from
 
 function Categories() {
     const [state, setState] = useState(undefined);
+    const { currentUser } = useContext(GlobalContext)
     const history = useHistory()
-    const uN = window.$uName
-    // const { login } = useContext(GlobalContext)
-    if (uN === undefined) {
+    // const UserName = currentUser.email
+
+    try {
+        const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
+        window.$uName = UserName;
+    }
+    catch {
         history.push('/login')
     }
+    //consoke.log(currentUser)
+
 
 
 
@@ -44,10 +51,6 @@ function Categories() {
     function clickEvent(id) {
         setState(id);
     }
-
-
-
-
 
     return (state === '1' ?
         <Display
@@ -115,11 +118,7 @@ function Categories() {
                                                                         api={'https://opentdb.com/api.php?amount=10&category=32&type=multiple'} />
                                                                     :
                                                                     (
-                                                                        <div
-                                                                        // style={{
-                                                                        //     marginLeft: '5rem',
-                                                                        //     marginRight: '5rem',
-                                                                        // }}
+                                                                        <div className='pb-5 lg:pb-3'
                                                                         >
                                                                             <Link to='/'>
                                                                                 <img className="logo" alt="logo" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
@@ -133,7 +132,7 @@ function Categories() {
                                                                                     marginBottom: '1rem'
 
                                                                                 }}>
-                                                                                {/* {console.log(login)} */}
+                                                                                {/* {//consoke.log(login)} */}
                                                                                 Choose your category
                                                                             </header>
 

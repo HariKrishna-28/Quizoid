@@ -3,7 +3,7 @@ import "../styles/Footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footerx">
       <p>All Rights Reserved @Quizoid</p>
     </div>
   );

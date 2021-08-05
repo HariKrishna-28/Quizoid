@@ -8,7 +8,7 @@ const Questionnaire = ({
 }) => {
 
     return (
-        <div className='flex flex-col'
+        <div className='flex flex-col mx-4 lg:pt-3 sm:pt-2'
         >
             {/* prints the questions*/}
             <div

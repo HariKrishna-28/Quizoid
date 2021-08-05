@@ -39,7 +39,7 @@ const MyProfile = () => {
 
                 <Card.Body >
 
-                    <h1>Profile</h1>
+                    {/* <h1>Profile</h1> */}
 
                     {error && <Alert class="alerts" variant="danger"> {error} </Alert>}
                     {/* <p className="foot"><strong>Email: </strong>{currentUser.email}</p> */}

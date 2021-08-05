@@ -56,7 +56,7 @@ const ChooseLeaderBoard = () => {
     }
 
     return (
-        <div>
+        <div className='pb-3'>
 
             {/* <img className="logo" src='../Assets/leaderboard@4x-8,png' alt='name' /> */}
             <Link

@@ -107,6 +107,7 @@ function Display({ name, api }) {
         paddingLeft: '0rem',
         paddingRight: '0rem',
         marginTop: '6rem',
+        paddingBottom: '3rem',
     }
 
 
