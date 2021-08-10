@@ -35,25 +35,42 @@ function Navbar() {
       <div className="leftSide" id={openLinks ? "open" : "close"}>
         <img src={Logo} alt='logo' />
 
-        <div className="hiddenLinks">
-          {/* <a href="http://quizoid-home.netlify.app">Home</a> */}
-          <Link to='/categories' >Take Quiz</Link>
-          <Link to='/ChooseLeaderBoard'>LeaderBoard</Link>
-          <Link to="/MyProfile" >Profile</Link>
-          {/* <Button onClick={handleLogout}> Log Out </Button> */}
+        <div className="hiddenLinks" >
+
+          <Link to='/categories' className='mx-2' >Take Quiz</Link>
+          <Link to='/ChooseLeaderBoard' className='mx-2'>LeaderBoard</Link>
+          <Link to="/MyProfile" className='mx-2'>Profile</Link>
 
         </div>
+
       </div>
+
       <div className="rightSide">
+
         <Link to='/categories' >  Categories</Link>
         <Link to='/ChooseLeaderBoard'> LeaderBoard  </Link>
         <Link to="/MyProfile" >Profile </Link>
         {/* <Button onClick={handleLogout}> Log Out </Button> */}
+
         <button onClick={toggleNavbar}>
           X
         </button>
+
       </div>
     </div>
+    // <div className='flex flex-row py-3' style={{ backgroundColor: '#1e1e1e', color: 'white' }}>
+    //   <img src={Logo} alt='logo' width='200px' />
+
+    //   <div className='mt-2 text-lg pt-3 font-sans' style={{
+    //     right: 0
+    //   }}>
+    //     <Link to='/categories' className='mx-20 no-underline text-white hover:no-underline ' >Take Quiz</Link>
+    //     <Link to='/ChooseLeaderBoard' className='mx-20  no-underline text-white hover:no-underline'>LeaderBoard</Link>
+    //     <Link to="/MyProfile" className='mx-20 no-underline text-white hover:no-underline'>Profile</Link>
+
+    //   </div>
+    // </div>
+
   );
 }
 

@@ -28,7 +28,11 @@
   font-size: small;
   width: 300px;
   height: 350px;
-  margin: 20px;
+  /* margin-block-end: 20px; */
+  /* margin: 20px; */
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 .menuItem:hover {
@@ -56,18 +60,17 @@
 @media only screen and (max-width: 1300px) {
   .menuList {
     grid-template-columns: 1fr 1fr;
-    margin-right: 4.6rem;
-
-    /* padding-right: 5rem; */
+    /* margin-right: 3.2rem; */
+    align-items: center;
   }
 }
 
 @media only screen and (max-width: 800px) {
   .menuList {
     grid-template-columns: 1fr;
+    /* align-items: center; */
   }
-  /* .menuItem {
+  .menuItem {
     grid-template-columns: 1fr;
-    margin-right: 2rem;
-  } */
+  }
 }

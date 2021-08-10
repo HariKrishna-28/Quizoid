@@ -78,10 +78,7 @@ function Display({ name, api }) {
         textAlign: 'center',
     }
 
-
     //console.log('tableName', tableName)
-
-
 
     const uploadScore = async () => {
         try {
