@@ -3,6 +3,7 @@ import Logo from "../assets/logo.png";
 // import ReorderIcon from "@material-ui/icons/Reorder";
 import "../styles/Navbar.css";
 import { Link } from 'react-router-dom'
+// import DropDown from './DropDown'
 // import { GlobalContext } from '../../contexts/GlobalContext'
 // import { Button } from 'react-bootstrap'
 
@@ -58,15 +59,15 @@ function Navbar() {
 
       </div>
     </div>
-    // <div className='flex flex-row py-3' style={{ backgroundColor: '#1e1e1e', color: 'white' }}>
+    // <div className='flex flex-row py-1 sm:hidden' style={{ backgroundColor: '#1e1e1e', color: 'white' }}>
     //   <img src={Logo} alt='logo' width='200px' />
 
     //   <div className='mt-2 text-lg pt-3 font-sans' style={{
     //     right: 0
     //   }}>
-    //     <Link to='/categories' className='mx-20 no-underline text-white hover:no-underline ' >Take Quiz</Link>
-    //     <Link to='/ChooseLeaderBoard' className='mx-20  no-underline text-white hover:no-underline'>LeaderBoard</Link>
-    //     <Link to="/MyProfile" className='mx-20 no-underline text-white hover:no-underline'>Profile</Link>
+    //     <Link to='/categories' className='mx-2 no-underline text-white hover:no-underline ' >Take Quiz</Link>
+    //     <Link to='/ChooseLeaderBoard' className='mx-2  no-underline text-white hover:no-underline'>LeaderBoard</Link>
+    //     <Link to="/MyProfile" className='mx-2 no-underline text-white hover:no-underline'>Profile</Link>
 
     //   </div>
     // </div>

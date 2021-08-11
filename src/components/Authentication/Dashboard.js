@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import { useHistory } from 'react-router-dom'
 import { GlobalContext } from '../contexts/GlobalContext'
 import './Sign_up.css'
-import Home from '../Home Page/pages/Home'
+import Home from '../Home page/pages/Home'
 
 export default function Dashboard() {
     // const [error, setError] = useState("")

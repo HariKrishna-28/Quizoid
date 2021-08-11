@@ -8,7 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: url("../assets/bg.svg");
+  background-image: url("../assets/5603875.jpg");
   object-fit: cover;
 
   /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
@@ -56,6 +56,7 @@
 }
 
 @media only screen and (max-width: 650px) {
+  /* mobile view */
   .home {
     justify-content: center;
     align-items: center;
