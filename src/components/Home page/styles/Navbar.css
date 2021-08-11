@@ -88,7 +88,6 @@
   }
 
   .navbar .rightSide {
-    /* width: 70px; */
     margin-right: 0%;
     margin-left: 0%;
   }
@@ -97,12 +96,9 @@
     padding-left: 10px;
     margin-right: 0;
     position: absolute;
-
-    /* margin-block-end: 10px; */
   }
 
-  /* mobile */
-  .navbar .rightSide {
+  mobile .navbar .rightSide {
     flex: 50%;
     height: 0%;
     display: flex;

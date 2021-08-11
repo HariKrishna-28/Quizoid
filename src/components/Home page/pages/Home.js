@@ -20,14 +20,14 @@ function Home() {
 
   return (
     <>
-      <Nav />
       <div style={{
-        backgroundColor: 'black',
+        backgroundColor: '#1e1e1e',
         marginBottom: 0,
         marginLeft: 0,
         marginRight: 0,
       }}>
-        {/* <Navbar /> */}
+        {/* <Navbar className="sm:none" /> */}
+        <Nav />
 
         <div className="home" style={{ objectFit: 'fill', marginTop: 0, marginBottom: 0, }}>
 
