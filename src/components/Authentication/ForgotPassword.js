@@ -4,6 +4,7 @@ import { Form, Button, Card } from "react-bootstrap"
 import { GlobalContext } from '../contexts/GlobalContext'
 import './Sign_up.css'
 import { Link } from 'react-router-dom'
+import Logo from '../Assets/logo1.svg'
 
 
 export default function ForgotPassword() {
@@ -40,7 +41,7 @@ export default function ForgotPassword() {
 
     return (
         <>
-            <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
+            <img className="logo" alt="logo" src={Logo} />
             <Card className="topcon">
                 <Card.Body >
                     <h1 className='font-bold text-3xl'>Password Reset</h1>

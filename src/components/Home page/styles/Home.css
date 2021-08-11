@@ -60,7 +60,10 @@
   .home {
     justify-content: center;
     align-items: center;
-    background-image: url("../assets/MOBILE-BG.svg");
+    background-image: url("../../Assets/mob_11zon.jpg");
+    margin-top: 0%;
+    margin-bottom: 0%;
+    object-fit: fill;
   }
 
   .headerContainer {

@@ -2,6 +2,8 @@ import DisplayLeaderBoard from './DisplayLeaderBoard';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react'
 //import { Dropdown, Selection } from 'react-dropdown';
+// import { logo1 } from '../Assets/logo1.svg'
+import Logo from '../Assets/logo1.svg'
 
 
 
@@ -61,7 +63,7 @@ const ChooseLeaderBoard = () => {
             {/* <img className="logo" src='../Assets/leaderboard@4x-8,png' alt='name' /> */}
             <Link
                 to='/'>
-                <img className="logo" alt="logo" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
+                <img className="logo" alt="logo" src={Logo} />
             </Link>
 
             <div className="my-10 mx-[1.8px]"

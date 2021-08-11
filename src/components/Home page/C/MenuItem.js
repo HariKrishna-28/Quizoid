@@ -14,8 +14,10 @@ function MenuItem({ image, name, price }) {
           <img src={imageAddress} className='w-60 overflow-hidden bg-cover rounded-xl shadow-xl' alt='team' />
         </div>
         {/* <div style={{ backgroundImage: `url(${image})` }}> </div> */}
+
         <p className='font-semibold text-center text-2xl'> {name} </p>
         <p className='text-center lg:text-xl'> {price} </p>
+
       </div>
       {/* </a> */}
     </div>

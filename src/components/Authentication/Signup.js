@@ -4,6 +4,7 @@ import { Form, Button, Card } from "react-bootstrap"
 import './Sign_up.css'
 import { Link, useHistory } from 'react-router-dom'
 import { GlobalContext } from '../contexts/GlobalContext'
+import Logo from '../Assets/logo1.svg'
 
 export default function Signup() {
 
@@ -49,7 +50,8 @@ export default function Signup() {
 
     return (
         <>
-            <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
+            <img className="logo" alt="Social Vue" src={Logo} />
+
             <Card className="topcon">
                 {/* {console.log(auth)} */}
 

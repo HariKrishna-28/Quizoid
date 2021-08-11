@@ -1,17 +1,18 @@
 import React from "react";
-// import { useState } from "react";
-// import BannerImage from "../assets/bg.svg";
-// import BannerImage from '../assets/5603875.jpg'
-// backgroundImage: `url(${BannerImage})`,
 import { MenuList } from "../helpers/MenuList";
 import MenuItem from "../C/MenuItem";
 import Navbar from '../C/Navbar'
-// import Nav from "../C/Nav";
 import { Link } from 'react-router-dom'
 import Footer from "../C/Footer";
 import "../styles/Home.css";
 import "../styles/Menu.css";
 import "../styles/Contact.css";
+
+// import { useState } from "react";
+// import BannerImage from "../assets/bg.svg";
+// import BannerImage from '../assets/5603875.jpg'
+// backgroundImage: `url(${BannerImage})`,
+// import Nav from "../C/Nav";
 
 function Home() {
   // const [submitted, setSubmitted] = useState(false);

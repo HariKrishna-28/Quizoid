@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { Card, Button, Alert } from 'react-bootstrap'
 import { Link, useHistory } from 'react-router-dom'
 import { GlobalContext } from '../contexts/GlobalContext'
+import Logo from '../Assets/logo1.svg'
 
 const MyProfile = () => {
     const [error, setError] = useState("")
@@ -31,7 +32,7 @@ const MyProfile = () => {
     return (
         <>
             <Link to='/'>
-                <img className="logo" alt="logo" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
+                <img className="logo" alt="logo" src={Logo} />
             </Link>
 
             <Card className="topcon">

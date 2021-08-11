@@ -2,6 +2,8 @@ import React, { useState, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import Display from './Display';
 import { GlobalContext } from '../contexts/GlobalContext'
+import Logo from '../Assets/logo1.svg'
+
 
 //Displays the categpries for the user to choose from
 
@@ -121,7 +123,7 @@ function Categories() {
                                                                         <div className='pb-5 lg:pb-3'
                                                                         >
                                                                             <Link to='/'>
-                                                                                <img className="logo" alt="logo" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
+                                                                                <img className="logo" alt="logo" src={Logo} />
                                                                             </Link>
                                                                             <header
                                                                                 className="font-bold text-4xl mx-1 "

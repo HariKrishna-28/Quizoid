@@ -95,16 +95,18 @@
 
   .navbar .leftSide {
     padding-left: 10px;
+    margin-right: 0;
+    position: absolute;
 
     /* margin-block-end: 10px; */
   }
 
   /* mobile */
   .navbar .rightSide {
-    /* flex: 50%; */
+    flex: 50%;
     height: 0%;
-    /* display: flex; */
-    /* align-items: center; */
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
 }

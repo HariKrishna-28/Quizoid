@@ -4,6 +4,7 @@ import { Form, Button, Card, Alert } from "react-bootstrap"
 import { GlobalContext } from '../contexts/GlobalContext'
 import './Sign_up.css'
 import { Link, useHistory } from 'react-router-dom'
+import Logo from '../Assets/logo1.svg'
 
 
 export default function UpdateProfile() {
@@ -54,7 +55,7 @@ export default function UpdateProfile() {
     return (
         <>
 
-            <img className="logo" alt="Social Vue" src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" />
+            <img className="logo" src={Logo} alt="Social Vue" />
             <Card className="topcon">
                 <Card.Body >
                     {/* className="containerX" */}

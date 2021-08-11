@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import Logo from "../assets/logo.png";
-// import ReorderIcon from "@material-ui/icons/Reorder";
-import "../styles/Navbar.css";
+import Logo from "../../Assets/logo.svg"
 import { Link } from 'react-router-dom'
+import "../styles/Navbar.css";
+// import ReorderIcon from "@material-ui/icons/Reorder";
 // import DropDown from './DropDown'
+// import Logo from "../assets/logo.png";
 // import { GlobalContext } from '../../contexts/GlobalContext'
 // import { Button } from 'react-bootstrap'
 
@@ -48,8 +49,8 @@ function Navbar() {
 
       <div className="rightSide">
 
-        <Link to='/categories' >  Categories</Link>
-        <Link to='/ChooseLeaderBoard'> LeaderBoard  </Link>
+        <Link to='/categories'>  Categories</Link>
+        <Link to='/ChooseLeaderBoard' > LeaderBoard  </Link>
         <Link to="/MyProfile" >Profile </Link>
         {/* <Button onClick={handleLogout}> Log Out </Button> */}
 
