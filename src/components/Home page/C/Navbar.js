@@ -14,7 +14,6 @@ function Navbar() {
   // const history = useHistory()
   // const [error, setError] = useState("")
 
-
   const toggleNavbar = () => {
     setOpenLinks(!openLinks);
   };

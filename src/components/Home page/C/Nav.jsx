@@ -6,7 +6,7 @@ import Logo from '../../Assets/logo.svg'
 
 const navigation = [
     // { name: 'Dashboard', href: '#', current: true },
-    { name: 'Take Quiz', href: '/Categories', current: true },
+    { name: 'Take Quiz', href: '/Categories', current: false },
     { name: 'Leaderboard', href: '/ChooseLeaderBoard', current: false },
     { name: 'My Profile', href: '/MyProfile', current: false },
 ]

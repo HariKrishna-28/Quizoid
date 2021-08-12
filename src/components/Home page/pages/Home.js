@@ -1,7 +1,6 @@
 import React from "react";
 import { MenuList } from "../helpers/MenuList";
 import MenuItem from "../C/MenuItem";
-// import Navbar from '../C/Navbar'
 import Nav from "../C/Nav";
 import { Link } from 'react-router-dom'
 import Footer from "../C/Footer";
@@ -9,6 +8,7 @@ import "../styles/Home.css";
 import "../styles/Menu.css";
 import "../styles/Contact.css";
 
+// import Navbar from '../C/Navbar'
 // import { useState } from "react";
 // import BannerImage from "../assets/bg.svg";
 // import BannerImage from '../assets/5603875.jpg'
@@ -20,13 +20,15 @@ function Home() {
 
   return (
     <>
+
       <div style={{
         backgroundColor: '#1e1e1e',
         marginBottom: 0,
         marginLeft: 0,
         marginRight: 0,
       }}>
-        {/* <Navbar className="sm:none" /> */}
+
+        {/* <Navbar className="sm:none relative mt-0" /> */}
         <Nav />
 
         <div className="home" style={{ objectFit: 'fill', marginTop: 0, marginBottom: 0, }}>
