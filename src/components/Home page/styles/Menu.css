@@ -57,6 +57,7 @@
 @media only screen and (max-width: 1300px) {
   .menuList {
     grid-template-columns: 1fr 1fr;
+    margin-right: 2.2rem;
 
     align-items: center;
   }

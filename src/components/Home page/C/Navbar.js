@@ -2,17 +2,21 @@ import React, { useState } from "react";
 import Logo from "../../Assets/logo.svg"
 import { Link } from 'react-router-dom'
 import "../styles/Navbar.css";
+import { MenuIcon } from '@heroicons/react/outline'
 // import ReorderIcon from "@material-ui/icons/Reorder";
 // import DropDown from './DropDown'
 // import Logo from "../assets/logo.png";
 // import { GlobalContext } from '../../contexts/GlobalContext'
 // import { Button } from 'react-bootstrap'
 
+
+
 function Navbar() {
   const [openLinks, setOpenLinks] = useState(false);
   // const { currentUser, logout } = useContext(GlobalContext)
   // const history = useHistory()
   // const [error, setError] = useState("")
+
 
   const toggleNavbar = () => {
     setOpenLinks(!openLinks);
@@ -40,21 +44,21 @@ function Navbar() {
 
           <Link to='/categories' className='mx-2' >Take Quiz</Link>
           <Link to='/ChooseLeaderBoard' className='mx-2'>LeaderBoard</Link>
-          <Link to="/MyProfile" className='mx-2'>Profile</Link>
+          <Link to="/MyProfile" >Profile</Link>
 
         </div>
 
       </div>
 
-      <div className="rightSide">
+      <div className="rightSide" >
 
-        <Link to='/categories'>  Categories</Link>
+        <Link to='/categories'>  Take Quiz</Link>
         <Link to='/ChooseLeaderBoard' > LeaderBoard  </Link>
         <Link to="/MyProfile" >Profile </Link>
         {/* <Button onClick={handleLogout}> Log Out </Button> */}
 
         <button onClick={toggleNavbar}>
-          X
+          <MenuIcon className="block h-6 w-6 ml-0" aria-hidden="true" />
         </button>
 
       </div>

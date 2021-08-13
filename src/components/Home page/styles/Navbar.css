@@ -41,9 +41,9 @@
   cursor: pointer;
 }
 
-.navbar .rightSide svg {
+/* .navbar .rightSide svg {
   font-size: 40px;
-}
+} */
 
 .navbar #open {
   padding-left: 0px;
@@ -57,7 +57,7 @@
 }
 
 .navbar #open .hiddenLinks {
-  display: inherit;
+  display: absolute;
   margin-left: 30px;
 }
 
@@ -69,8 +69,9 @@
   width: 70px;
   margin: 5px;
   margin-right: 0%;
-  position: absolute;
+  position: static;
 }
+
 @media only screen and (max-width: 900px) {
   .navbar {
     width: 100%;

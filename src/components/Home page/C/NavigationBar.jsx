@@ -15,7 +15,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Nav() {
+export default function NavigationBar() {
     return (
         <Disclosure as="nav" className=" text-white" style={{ backgroundColor: '#1e1e1e' }}>
             {({ open }) => (
@@ -27,25 +27,30 @@ export default function Nav() {
                                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
-                                        <XIcon className="block h-6 w-6" aria-hidden="true" />
+                                        <XIcon className="block h-6 w-6 ml-0" aria-hidden="true" />
                                     ) : (
-                                        <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                                        <MenuIcon className="block h-6 w-6 ml-0" aria-hidden="true" />
                                     )}
                                 </Disclosure.Button>
                             </div>
                             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                                <div className="flex-shrink-0 flex items-center">
+
+                                <div className="flex-shrink-0 flex items-center mt-1">
+
                                     <img
                                         className="block lg:hidden h-12 w-auto"
                                         src={Logo}
                                         alt="Workflow"
                                     />
+
                                     <img
                                         className="hidden lg:block h-8 w-auto"
                                         src={Logo}
                                         alt="Workflow"
                                     />
+
                                 </div>
+
                                 <div className="hidden sm:block sm:ml-6">
                                     <div className="flex space-x-4">
                                         {/* <h1>hi</h1> */}
@@ -127,12 +132,12 @@ export default function Nav() {
                                         </Menu.Items>
                                     </Transition>
                                 </Menu>
+
                             </div>
                         </div>
                     </div>
 
                     <Disclosure.Panel className="sm:hidden">
-                        {/* <h1>hi</h1> */}
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             {navigation.map((item) => (
                                 <Link
@@ -150,6 +155,16 @@ export default function Nav() {
                             ))}
                         </div>
                     </Disclosure.Panel>
+                    {/* <div className='absolute mt-0'>
+                        <img src={Logo} alt='logo' />
+
+                        <Link to='/categories' className='hidden lg:flex'>  Categories</Link>
+                        <Link to='/ChooseLeaderBoard' className='hidden lg:flex' > LeaderBoard  </Link>
+                        <Link to="/MyProfile" className='hidden lg:flex' >Profile  </Link>
+
+                        
+                        </div>
+ */}
                 </>
             )}
         </Disclosure>

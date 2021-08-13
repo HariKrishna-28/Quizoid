@@ -8,6 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  /* background-image: url("../assets/"); */
   background-image: url("../assets/5603875.jpg");
   object-fit: cover;
 
@@ -61,6 +62,7 @@
     justify-content: center;
     align-items: center;
     background-image: url("../../Assets/mob_11zon.jpg");
+    /* background-image: url("../../Assets/mobile.svg"); */
     margin-top: 0%;
     margin-bottom: 0%;
     object-fit: fill;

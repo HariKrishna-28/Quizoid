@@ -1,12 +1,14 @@
 import React from "react";
 import { MenuList } from "../helpers/MenuList";
 import MenuItem from "../C/MenuItem";
-import Nav from "../C/Nav";
+import Navbar from "../C/Navbar";
+// import NavigationBar from "../C/NavigationBar";
 import { Link } from 'react-router-dom'
 import Footer from "../C/Footer";
 import "../styles/Home.css";
 import "../styles/Menu.css";
 import "../styles/Contact.css";
+// import N from '../C/N'
 
 // import Navbar from '../C/Navbar'
 // import { useState } from "react";
@@ -29,7 +31,9 @@ function Home() {
       }}>
 
         {/* <Navbar className="sm:none relative mt-0" /> */}
-        <Nav />
+        {/* <NavigationBar /> */}
+        <Navbar />
+        {/* <N /> */}
 
         <div className="home" style={{ objectFit: 'fill', marginTop: 0, marginBottom: 0, }}>
 
