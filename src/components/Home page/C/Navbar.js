@@ -42,9 +42,9 @@ function Navbar() {
 
         <div className="hiddenLinks" >
 
-          <Link to='/categories' className='mx-2' >Take Quiz</Link>
-          <Link to='/ChooseLeaderBoard' className='mx-2'>LeaderBoard</Link>
-          <Link to="/MyProfile" >Profile</Link>
+          <Link to='/categories' className=' mx-1  p-2 rounded-lg' >Take Quiz</Link>
+          <Link to='/ChooseLeaderBoard' className=' mx-1  p-2 rounded-lg'>LeaderBoard</Link>
+          <Link to="/MyProfile" className='  p-2 rounded-lg' >Profile</Link>
 
         </div>
 
@@ -57,8 +57,8 @@ function Navbar() {
         <Link to="/MyProfile" >Profile </Link>
         {/* <Button onClick={handleLogout}> Log Out </Button> */}
 
-        <button onClick={toggleNavbar}>
-          <MenuIcon className="block h-6 w-6 ml-0" aria-hidden="true" />
+        <button onClick={toggleNavbar} className='align-center items-center'>
+          <MenuIcon className="absolute h-6 w-6 ml-0 mr-0" aria-hidden="true" />
         </button>
 
       </div>
