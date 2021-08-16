@@ -7,7 +7,7 @@ export const MenuList = [
     name: "Harikrishna C",
     image: Hari,
     price: "III-CSE, KPRIET",
-    // link: "https://github.com/HariKrishna-28"
+    link: "https://github.com/HariKrishna-28"
 
   },
 
@@ -15,14 +15,14 @@ export const MenuList = [
     name: "Abishek Velavan D",
     image: Abi,
     price: "III-CSE, KPRIET",
-    // link: "https://github.com/abishekvelavan"
+    link: "https://github.com/abishekvelavan"
   },
 
   {
     name: "Gokul B",
     image: Gokul,
     price: "III-BME KPRIET",
-    // link: "https://github.com/gokul-siva-1322"
+    link: "https://github.com/gokul-siva-1322"
   },
 
 ];

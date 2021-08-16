@@ -8,12 +8,17 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  /* background-image: url("../assets/"); */
+  width: 100%;
+  /* background-image: url("../assets/bg.svg"); */
   background-image: url("../assets/5603875.jpg");
   object-fit: cover;
 
   /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
 }
+/* svg {
+  width: 100%;
+  height: 100%;
+} */
 
 .headerContainer {
   width: auto;
@@ -65,7 +70,7 @@
     /* background-image: url("../../Assets/mobile.svg"); */
     margin-top: 0%;
     margin-bottom: 0%;
-    object-fit: fill;
+    object-fit: cover;
   }
 
   .headerContainer {

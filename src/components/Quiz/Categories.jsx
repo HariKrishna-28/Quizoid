@@ -137,6 +137,7 @@ function Categories() {
                                                                                 {/* {//consoke.log(login)} */}
                                                                                 Choose your category
                                                                             </header>
+                                                                            {/* <img src='../../Assets/logo.svg' /> */}
 
                                                                             <div className="grid grid-cols-2 gap-6 mr-5 ml-5 lg:grid-cols-4 lg:mr-40 lg:ml-40"
                                                                             // style={{

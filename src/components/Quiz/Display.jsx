@@ -82,16 +82,16 @@ function Display({ name, api }) {
 
     const uploadScore = async () => {
         try {
-            console.log('logged in upload Data');
+            // console.log('logged in upload Data');
             const firestore = firebase.database().ref(tableName);
             let data = {
                 userName: window.$uName,
                 //category: name,
                 userScore: score,
             };
-            console.log(data);
+            //console.log(data);
             await firestore.push(data);
-            console.log('pushed the data');
+            //console.log('pushed the data');
         } catch (error) {
             console.log(error.message);
         }
