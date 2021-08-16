@@ -44,7 +44,7 @@ function Home() {
           <h5><br></br></h5>
           <h1 className='my-6'> Hi {window.$uName}, </h1>
           <div className='py-4 mx-3 lg:mx-10'>
-            <h5>Welcome to Quizoid, an online gamified quiz application to test your knowledge. <br></br> The rules are simple. Take the  <Link to='/categories' className="no-underline">Quiz</Link>, choose a category,  compete wtih other users and make it to the <Link to='/ChooseLeaderBoard' className="no-underline">leaderboard</Link>. All the Best!!</h5>
+            <h5>Welcome to Quizoid, an online gamified quiz application to test your knowledge. <br></br> The rules are simple. Take the  <Link to='/categories' className="no-underline">Quiz</Link>, choose a category,  compete wtih other users and make it to the <Link to='/ChooseLeaderBoard' className="no-underline">leaderboard</Link>.<br></br> All the Best!!</h5>
           </div>
 
           <h1 className='pt-2 pb-3'>INSTRUCTIONS</h1>
