@@ -5,7 +5,7 @@ import { GlobalContext } from '../contexts/GlobalContext'
 import Logo from '../Assets/logo1.svg'
 
 
-//Displays the categpries for the user to choose from
+//Displays the categories for the user to choose from
 
 function Categories() {
     const [state, setState] = useState(undefined);
@@ -20,7 +20,7 @@ function Categories() {
     catch {
         history.push('/login')
     }
-    //consoke.log(currentUser)
+    //console.log(currentUser)
 
 
 

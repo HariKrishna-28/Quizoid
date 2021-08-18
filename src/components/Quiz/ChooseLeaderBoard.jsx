@@ -60,7 +60,6 @@ const ChooseLeaderBoard = () => {
     return (
         <div className='pb-3'>
 
-            {/* <img className="logo" src='../Assets/leaderboard@4x-8,png' alt='name' /> */}
             <Link
                 to='/'>
                 <img className="logo" alt="logo" src={Logo} />
@@ -102,12 +101,12 @@ const ChooseLeaderBoard = () => {
                                                                                     null)}
                 </div>
 
-                <div className='flex justify-center items-center gap-4'>
+                <div className='flex flex-col lg:flex-row justify-center items-center gap-4'>
 
                     <Link to='/categories'
-                        className="p-2 px-2 rounded-md bg-white text-center text-decoration-none"
+                        className="p-2 px-3 rounded bg-white text-center text-decoration-none"
                         style={{
-                            backgroundColor: 'white', color: '#3e4962', fontWeight: '500',
+                            backgroundColor: 'white', color: '#3e4962', fontWeight: '500', width: '10rem'
                         }} >
                         Retake Quiz
 
@@ -115,9 +114,9 @@ const ChooseLeaderBoard = () => {
 
                     <Link
                         to='/'
-                        className="p-2 px-2 rounded-md bg-white text-center text-decoration-none"
+                        className="p-2 px-3 rounded bg-white text-center text-decoration-none"
                         style={{
-                            backgroundColor: 'white', color: '#3e4962', fontWeight: '500',
+                            backgroundColor: 'white', color: '#3e4962', fontWeight: '500', width: '10rem'
                         }} >
                         Dashboard
                     </Link>
