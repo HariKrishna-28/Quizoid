@@ -5,6 +5,8 @@ import './Sign_up.css'
 import { Link, useHistory } from 'react-router-dom'
 import { GlobalContext } from '../contexts/GlobalContext'
 import Logo from '../Assets/logo1.svg'
+import ShowPasswordIcon from '../Assets/shared-vision.png'
+
 
 export default function Signup() {
 
@@ -15,6 +17,8 @@ export default function Signup() {
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
     const history = useHistory()
+    const [showPassword, setShowPassword] = useState(false)
+
     // const { verifyEmail } = useContext(GlobalContext)
 
     async function handleSubmit(e) {
@@ -61,6 +65,19 @@ export default function Signup() {
                     {/* {error && <Alert variant="danger"> {error} </Alert>} */}
                     {error && <h4 className="bg-red-100 text-base border border-red-400 text-red-700 px-1 py-2 rounded relative" role='alert'>{error}</h4>}
 
+                    <button onClick={() => setShowPassword(!showPassword)}>  
+           
+                        <img 
+                            src = {ShowPasswordIcon} 
+                            width = "28px"  
+                            alt = "showPassword" 
+                            style = {{
+                                position: 'absolute',
+                                marginTop: '4.15rem',
+                                marginLeft: '5.5rem'
+                        }} />
+                    </button>   
+
                     <Form id="signup-form" onSubmit={handleSubmit}>
 
                         <Form.Group id="signup-email">
@@ -68,7 +85,7 @@ export default function Signup() {
                         </Form.Group>
 
                         <Form.Group id="password">
-                            <Form.Control className="formx-mid" type="password" style={formStyle} ref={passwordRef} placeholder="Password"
+                            <Form.Control className="formx-mid" type={!showPassword ? "password" : "text"} style={formStyle} ref={passwordRef} placeholder="Password"
                                 pattern="(?=.*\d)(?=.[a-z])(?=.[A-z]).{8,}"
                                 title="Must contain at least one number[0-9] and one uppercase[A-Z] and lowercase[a-b] letter,and atleast 8 or more character"
                                 required
@@ -77,7 +94,7 @@ export default function Signup() {
                         </Form.Group>
 
                         <Form.Group id="confirmpassword">
-                            <Form.Control className="formx-end" type="password" style={formStyle} ref={confirmpasswordRef} required placeholder="Confirm Password" />
+                            <Form.Control className="formx-end" type={!showPassword ? "password" : "text"} style={formStyle} ref={confirmpasswordRef} required placeholder="Confirm Password" />
                         </Form.Group>
 
                         <Button disabled={loading} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded" type="submit">Sign Up</Button>
