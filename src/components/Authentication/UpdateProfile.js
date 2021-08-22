@@ -5,6 +5,10 @@ import { GlobalContext } from '../contexts/GlobalContext'
 import './Sign_up.css'
 import { Link, useHistory } from 'react-router-dom'
 import Logo from '../Assets/logo1.svg'
+import ShowPasswordIcon from '../Assets/shared-vision.png'
+import HidePasswordIcon from '../Assets/invisible-symbol.png'
+
+
 
 
 export default function UpdateProfile() {
@@ -16,6 +20,8 @@ export default function UpdateProfile() {
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
     const history = useHistory()
+    const [showPassword, setShowPassword] = useState(false)
+
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -61,15 +67,29 @@ export default function UpdateProfile() {
                     {/* className="containerX" */}
                     <h1 className='font-bold text-3xl'>Update Profile</h1>
                     {error && <Alert variant="danger"> {error} </Alert>}
+
+                    <button onClick={() => setShowPassword(!showPassword)}>
+
+                        <img
+                            src={!showPassword ? ShowPasswordIcon : HidePasswordIcon}
+                            width="28px"
+                            alt={!showPassword ? "ShowPassword" : "HidePassword"}
+                            style={{
+                                position: 'absolute',
+                                marginTop: '4.15rem',
+                                marginLeft: '5.5rem'
+                            }} />
+                    </button>
+
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
                             <Form.Control className="formx-top" style={formStyle} type="email" ref={emailRef} required placeholder="Email" defaultValue={currentUser.email} />
                         </Form.Group>
                         <Form.Group id="password">
-                            <Form.Control className="formx-mid" style={formStyle} type="password" ref={passwordRef} placeholder="Enter new Password" />
+                            <Form.Control className="formx-mid" style={formStyle} type={!showPassword ? "password" : "text"} ref={passwordRef} placeholder="Enter new Password" />
                         </Form.Group>
                         <Form.Group id="confirmpassword">
-                            <Form.Control className="formx-end" style={formStyle} type="password" ref={confirmpasswordRef} placeholder="Confirm Password" />
+                            <Form.Control className="formx-end" style={formStyle} type={!showPassword ? "password" : "text"} ref={confirmpasswordRef} placeholder="Confirm Password" />
                         </Form.Group>
                         <Button disabled={loading} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Update</Button>
                     </Form>

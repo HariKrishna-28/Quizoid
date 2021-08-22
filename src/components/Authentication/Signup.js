@@ -6,6 +6,8 @@ import { Link, useHistory } from 'react-router-dom'
 import { GlobalContext } from '../contexts/GlobalContext'
 import Logo from '../Assets/logo1.svg'
 import ShowPasswordIcon from '../Assets/shared-vision.png'
+import HidePasswordIcon from '../Assets/invisible-symbol.png'
+
 
 
 export default function Signup() {
@@ -65,18 +67,18 @@ export default function Signup() {
                     {/* {error && <Alert variant="danger"> {error} </Alert>} */}
                     {error && <h4 className="bg-red-100 text-base border border-red-400 text-red-700 px-1 py-2 rounded relative" role='alert'>{error}</h4>}
 
-                    <button onClick={() => setShowPassword(!showPassword)}>  
-           
-                        <img 
-                            src = {ShowPasswordIcon} 
-                            width = "28px"  
-                            alt = "showPassword" 
-                            style = {{
+                    <button onClick={() => setShowPassword(!showPassword)}>
+
+                        <img
+                            src={!showPassword ? ShowPasswordIcon : HidePasswordIcon}
+                            width="28px"
+                            alt={!showPassword ? "ShowPassword" : "HidePassword"}
+                            style={{
                                 position: 'absolute',
                                 marginTop: '4.15rem',
                                 marginLeft: '5.5rem'
-                        }} />
-                    </button>   
+                            }} />
+                    </button>
 
                     <Form id="signup-form" onSubmit={handleSubmit}>
 
