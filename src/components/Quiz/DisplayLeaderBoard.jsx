@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+// import { useHistory } from 'react-router-dom'
 import firebase from '../firebase';
 import RotateLoader from "react-spinners/RotateLoader";
 // import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
@@ -7,9 +8,14 @@ import RotateLoader from "react-spinners/RotateLoader";
 // //import { useParams } from 'react-router-dom';
 
 const DisplayLeaderBoard = ({ tableName }) => {
+
     const [userData, setuserData] = useState([]);
     const name = `/${tableName}`;
-    // ////console.log(name);
+    // const history = useHistory()
+
+    // if (window.$uName == null) {
+    //     history.push('/login')
+    // }
 
     useEffect(() => {
         const firestore = firebase.database().ref(name);

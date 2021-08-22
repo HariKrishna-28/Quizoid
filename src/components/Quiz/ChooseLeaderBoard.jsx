@@ -1,5 +1,5 @@
 import DisplayLeaderBoard from './DisplayLeaderBoard';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import React, { useState } from 'react'
 //import { Dropdown, Selection } from 'react-dropdown';
 // import { logo1 } from '../Assets/logo1.svg'
@@ -8,7 +8,14 @@ import Logo from '../Assets/logo1.svg'
 
 
 const ChooseLeaderBoard = () => {
+    // console.log('hi')
+
     const [category, setCategory] = useState(0);
+    const history = useHistory()
+
+    if (window.$uName == null) {
+        history.push('/login')
+    }
 
     const DropDownMenu = () => {
         let options = ['General Knowledge', 'Ecology', 'Computer Science',
@@ -45,6 +52,7 @@ const ChooseLeaderBoard = () => {
         }
 
         return (
+
             <select style={dropDownStyle} onChange={handleChange} value={options[category]}>
                 {options.map((op, index) => {
                     return (

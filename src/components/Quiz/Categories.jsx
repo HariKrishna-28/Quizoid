@@ -1,7 +1,7 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import Display from './Display';
-import { GlobalContext } from '../contexts/GlobalContext'
+// import { GlobalContext } from '../contexts/GlobalContext'
 import Logo from '../Assets/logo1.svg'
 
 
@@ -9,19 +9,21 @@ import Logo from '../Assets/logo1.svg'
 
 function Categories() {
     const [state, setState] = useState(undefined);
-    const { currentUser } = useContext(GlobalContext)
     const history = useHistory()
+    // const { currentUser } = useContext(GlobalContext)
     // const UserName = currentUser.email
 
-    try {
-        const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
-        window.$uName = UserName;
-    }
-    catch {
+    // try {
+    //     const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
+    //     window.$uName = UserName;
+    // }
+    // catch {
+    //     history.push('/login')
+    // }
+
+    if (window.$uName == null) {
         history.push('/login')
     }
-    //console.log(currentUser)
-
 
 
 
