@@ -8,8 +8,10 @@
 </p>
 <h2 align=center>Online gamified quiz application to improve knowledge with a gamified and fun experience </h2>
 <h3>Choose a quiz from sixteen categories and compete with other users to make it to the leaderboard</h3><br>
+
+## Authors
+
 <h3>
-  Authors:<br>
   <a href="https://github.com/HariKrishna-28" target="_blank" rel="noreferrer">Hari Krishna C</a> <br>
   <a href="https://github.com/abishekvelavan" target="_blank" rel="noreferrer">Abishek Velavan D</a> <br>
   <a href="https://github.com/gokul-siva-1322" target="_blank" rel="noreferrer">Gokul B</a> <br>
