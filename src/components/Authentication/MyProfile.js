@@ -9,7 +9,17 @@ const MyProfile = () => {
     const { logout } = useContext(GlobalContext)
     const history = useHistory()
 
-    if (window.$uName == null) {
+    // if (window.$uName == null) {
+    //     history.push('/login')
+    // }
+    const { currentUser } = useContext(GlobalContext)
+    // const UserName = currentUser.email
+
+    try {
+        const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
+        window.$uName = UserName;
+    }
+    catch {
         history.push('/login')
     }
 
@@ -28,7 +38,7 @@ const MyProfile = () => {
     }
     return (
         <>
-            <Link to='/'>
+            <Link to='/' >
                 <img className="logo" alt="logo" src={Logo} />
             </Link>
 

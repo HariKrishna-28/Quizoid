@@ -1,30 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import Display from './Display';
-// import { GlobalContext } from '../contexts/GlobalContext'
+import { GlobalContext } from '../contexts/GlobalContext'
 import Logo from '../Assets/logo1.svg'
-
 
 //Displays the categories for the user to choose from
 
 function Categories() {
     const [state, setState] = useState(undefined);
     const history = useHistory()
-    // const { currentUser } = useContext(GlobalContext)
+
+    window.onload = window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+
+
+    const { currentUser } = useContext(GlobalContext)
     // const UserName = currentUser.email
 
-    // try {
-    //     const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
-    //     window.$uName = UserName;
-    // }
-    // catch {
-    //     history.push('/login')
-    // }
-
-    if (window.$uName == null) {
+    try {
+        const UserName = currentUser.email.slice(0, currentUser.email.indexOf('@'))
+        window.$uName = UserName;
+    }
+    catch {
         history.push('/login')
     }
 
+    // if (window.$uName == null) {
+    //     history.push('/login')
+    // }
 
 
     //buttons for categories
@@ -124,7 +130,7 @@ function Categories() {
                                                                     (
                                                                         <div className='pb-5 lg:pb-3'
                                                                         >
-                                                                            <Link to='/'>
+                                                                            <Link to='/' >
                                                                                 <img className="logo" alt="logo" src={Logo} />
                                                                             </Link>
                                                                             <header
@@ -248,6 +254,11 @@ function Categories() {
                                                                                     onClick={clickEvent} />
 
                                                                             </div>
+                                                                            {/* <div className="flex justify-center pt-8 text-2xl">
+                                                                                <button className="flex lg:hidden text-center border-color-bla" onClick={() => window.scrollTo(0, 0)}>
+                                                                                    Top
+                                                                                </button>
+                                                                            </div> */}
                                                                         </div>
                                                                     )
         )
