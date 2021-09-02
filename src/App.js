@@ -11,6 +11,7 @@ import ForgotPassword from './components/Authentication/ForgotPassword';
 import { GlobalProvider } from './components/contexts/GlobalContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyProfile from './components/Authentication/MyProfile'
+import PageNotFound from './components/PageNotFound';
 
 //const API_URL = 'https://opentdb.com/api.php?amount=10&category=9&type=multiple';
 
@@ -30,6 +31,8 @@ function App() {
           <Route path='/ChooseLeaderBoard' component={ChooseLeaderBoard} />
           <Route path='/Categories' component={Categories} />
           <Route path="/MyProfile" component={MyProfile} />
+          {/* 404 page */}
+          <Route component={PageNotFound} />
           {/* <Categories /> */}
 
         </Switch>
