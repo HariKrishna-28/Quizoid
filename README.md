@@ -1,5 +1,5 @@
 <h1 align="center">
-  Online Quiz Application
+  Quizoid
 </h1> <br>
 <p align=center>
 <a href="https://quizoid.netlify.app" target="_blank" rel="noreferrer">
