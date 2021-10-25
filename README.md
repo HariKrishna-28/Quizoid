@@ -1,42 +1,44 @@
-<h1 align="center">
-  Quizoid
-</h1> <br>
-<p align=center>
-<a href="https://quizoid.netlify.app" target="_blank" rel="noreferrer">
-<img src="https://raw.githubusercontent.com/abishekvelavan/Online-quiz-application/main/quizoid%20logo%404x-8.png" width="90/" >
-</a><br>
-</p>
-<h2 align=center>Online gamified quiz application to improve knowledge with a gamified and fun experience </h2>
-<h3>Choose a quiz from sixteen categories and compete with other users to make it to the leaderboard</h3><br>
+<div align = "center">
 
-## Authors
+# [ChatRoom](https://chat-room-28.netlify.app)
 
-<h3>
-  <a href="https://github.com/HariKrishna-28" target="_blank" rel="noreferrer">Hari Krishna C</a> <br>
-  <a href="https://github.com/abishekvelavan" target="_blank" rel="noreferrer">Abishek Velavan D</a> <br>
-  <a href="https://github.com/gokul-siva-1322" target="_blank" rel="noreferrer">Gokul B</a> <br>
-</h3><br>
+<!-- # ChatRoom -->
 
-## Tech Stack
+> ### _A realtime room code based chat application built using ReactJs, SocketIo, and ExpressJs._
 
-- <strong>React.js</strong> <br>
+</div>
+<br>
 
-## Dependency Bucket
+## Tech Stack and Dependencies
 
-- <strong>Tailwind CSS</strong> - CSS Framework
-- <strong>Bootstrap</strong> - CSS Framework
-- <strong>Firebase Auth</strong> - Authorisation and Authentication <br>
+<br>
 
-## Backend
+<div align="center">
 
-- <strong>Firebase</strong> <br>
+| <div align ="center">Name </div>             | <div align = "center">Description</div>               |
+| -------------------------------------------- | ----------------------------------------------------- |
+| **[ReactJs](https://reactjs.org)**           | Front End                                             |
+| **[ExpressJs](https://expressjs.com)**       | Back End                                              |
+| **[Auth0](https://auth0.com/)**              | Authentication and Authorization platform             |
+| **[Tailwind CSS](https://tailwindcss.com/)** | CSS Framework                                         |
+| **[SocketIo](https://socket.io/)**           | Bidirectional and low-latency communication           |
+| **[Axios](https://axios-http.com/)**         | Promise-based HTTP Client for node.js and the browser |
 
-## API
+</div>
+<br>
 
-- <strong>Open Trivia DB (quiz)</strong> <br>
+## Demo
 
-## Find the app <a href="https://quizoid.netlify.app" target="_blank" rel="noreferrer">here</a> <br>
+<br>
 
-> ## Live as if you were to die tomorrow. Learn as if you were to live forever
->
-> ### - Mahatma Gandhi
+<!-- ![Demo](Output/Demo.gif) -->
+
+![Demo](https://github.com/HariKrishna-28/ChatRoom/blob/main/Output/Demo.gif)
+
+<br>
+
+> ### _As the server is hosted on a free Heroku account, the server enters ‘sleep mode’ when not in use for 24 hours. If you notice a delay, please allow a few seconds for the servers to wake up._
+
+<br>
+
+## Find the app [here](https://chat-room-28.netlify.app/).
