@@ -14,7 +14,7 @@
 
 </div><br>
 
-## Authors
+## Contributors
 
 <h3>
   <a href="https://github.com/HariKrishna-28" >Hari Krishna C</a> <br>
