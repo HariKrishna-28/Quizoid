@@ -3,6 +3,7 @@ import { Card } from "react-bootstrap"
 // import { useAuth } from '../contexts/AuthContexts'
 import './Authentication/Sign_up.css'
 import { Link } from 'react-router-dom'
+import Four04 from './Assets/404.png'
 // import { GlobalContext } from '../contexts/GlobalContext'
 import Logo from './Assets/logo1.svg'
 // import ShowPasswordIcon from '../Assets/shared-vision.png'
@@ -24,16 +25,16 @@ const PageNotFound = () => {
                     {/* <h1 className='font-bold text-5xl'>404_</h1> */}
 
                     {/* <p className="foot"><strong>Email: </strong>{currentUser.email}</p> */}
-                    <div className='grid grid-rows-2 gap-2'>
-
-                        <h1 className='font-bold text-5xl'>404_</h1>
+                    <div className='grid grid-rows-2'>
+                        <h1 className='font-bold text-3xl'>404_</h1>
                         <p className="font-semibold">OOPS! YOU'RE BEYOND THE BORDERS.</p>
+                        <img src={Four04} alt="img" className="rounded-lg" />
 
                     </div>
 
-                    <div className="foot">
+                    <div className="foot mt-1">
                         <Link to="/"
-                            className="bg-blue-700 hover:bg-blue-500 text-white rounded text-decoration-none p-2 px-3">
+                            className="bg-blue-700  hover:bg-blue-500 text-white rounded text-decoration-none p-2 px-3">
                             Back to home page
                         </Link>
                     </div>
